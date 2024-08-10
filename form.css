@@ -137,3 +137,10 @@ form .form-row .textarea{
     
 }
 
+@media (max-width: 1010px) {
+  .error {
+    color: red;
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+}
