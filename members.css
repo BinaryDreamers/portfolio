@@ -134,17 +134,17 @@
 }
 
 .memberImagePlaceholder {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     background-color: #ddd;
-    border-radius: 10px;
+    border-radius: 100px;
     margin-bottom: 20px;
 }
 
 .memberImagePlaceholder img{
    width: 100%;
    height: 100%;
-   border-radius: 10px;
+   border-radius: 100px;
 }
 
 .memberHeadline {
