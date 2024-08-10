@@ -1,0 +1,218 @@
+.showcase{
+    background-color: white;
+}
+
+.aboutUs-hero{
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Full viewport height */
+    overflow: hidden;
+    
+     color: white;
+     text-align: center;
+     
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Ensure video is behind content */
+    transform: translate(-50%, -50%); /* Center the video */
+    background-size: cover; /* Ensure video covers the container */
+    filter: blur(5px);
+}
+
+.aboutUsContent{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutUsText{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUsText h1{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    
+}
+
+
+
+.aboutUsContainer{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.aboutUsContainer h2{
+    font-size: 2.5em;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+}
+
+.abouUsBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff00;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.abouUsBox p{
+    width: 60%;
+    font-weight: 500; 
+    font-size: 0.8em;
+}
+
+.abouUsBox li{
+    list-style: none;
+    margin: 10px 0;
+ 
+    width: 100%;
+    padding: 15px;
+}
+
+.abouUsBox li:nth-last-of-type(1),
+.abouUsBox li:nth-of-type(1),
+.abouUsBox li:nth-of-type(3){
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.abouUsBox li h2{
+    font-size: 2em;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+}
+
+.abouUsBox li p{
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+    font-weight: 500;
+    width: 100%;
+}
+
+.path-title {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.curvy-path {
+    width: 100px;
+    height: 200px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.curvy-path.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pathDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-wave-path-aboutUs{
+    fill: #ffffff00;
+}
+
+@media(max-width: 600px) {
+    .aboutUsText h1{
+        font-size: 2.5rem;
+    }
+    .aboutUsText p{
+        font-size: 1em;
+    }
+    .abouUsBox li{
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .abouUsBox p{
+        width: 100%;
+        font-size: 0.8em;
+    }
+    .abouUsBox li p{
+        font-size: 0.8em;
+    }
+    .aboutUsContainer h2{
+        font-size: 2em;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .aboutUsText h1{
+        font-size: 3rem;
+    }
+    .aboutUsText p{
+        font-size: 1.2em;
+    }
+    .abouUsBox p{
+        font-size: 1em;
+    }
+    .abouUsBox li p{
+        font-size: 1em;
+    }
+
+    .abouUsBox li h2{
+        font-size: 1.5em;
+    }
+
+    .abouUsBox{
+        flex-direction: column;
+    }
+
+    .abouUsBox .pathDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+

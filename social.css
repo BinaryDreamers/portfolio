@@ -1,0 +1,308 @@
+
+.main_back {
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(90deg);
+    width: 11em;
+    height: 11em;
+    background: linear-gradient(270deg, #03a9f4, #cc39a4, #ffb5d2);
+    z-index: -2;
+    box-shadow: inset 0px 0px 180px 5px #ffffff;
+    
+  }
+  
+  .main-social {
+    display: flex;
+    flex-wrap: wrap;
+    width: 14em;
+    align-items: center;
+    justify-content: center;
+   
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  
+  .card-social {
+    
+    width: 60px;
+    height: 60px;
+    border-top-left-radius: 10px;
+    background: lightgrey;
+    transition: 0.4s ease-in-out, 0.2s background-color ease-in-out,
+      0.2s background-image ease-in-out;
+    background: rgba(255, 255, 255, 0.596);
+    backdrop-filter: blur(5px);
+    border: 1px solid transparent;
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-social .instagram {
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    fill: #cc39a4;
+  }
+  
+  .card-social:nth-child(2) {
+    border-radius: 0px;
+  }
+  
+  .card-social:nth-child(2) .twitter {
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    fill: #03a9f4;
+  }
+  
+  .card-social:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+  }
+  
+  .card-social:nth-child(3) .dribble {
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    fill: #ffb5d2;
+  }
+  
+  .card-social:nth-child(4) {
+    border-radius: 0px;
+  }
+  
+  .card-social:nth-child(4) .codepen {
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    fill: black;
+  }
+  
+  .card-social:nth-child(5) {
+    border-radius: 0px;
+  }
+  
+  .card-social:nth-child(5) .uiverse {
+    position: absolute;
+    margin-left: 0.2em;
+    margin-top: 0.2em;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .card-social:nth-child(6) {
+    border-radius: 0px;
+  }
+  
+  .card-social:nth-child(6) .discord {
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    fill: #8c9eff;
+  }
+  
+  .card-social:nth-child(7) {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0px;
+  }
+  
+  .card-social:nth-child(7) .github {
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    fill: rgb(255, 255, 255);
+  }
+  
+  .card-social:nth-child(8) {
+    border-radius: 0px;
+  }
+  
+  .card-social:nth-child(8) .telegram {
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    fill: #29b6f6;
+  }
+  
+  .card-social:nth-child(9) {
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+  }
+  
+  .card-social:nth-child(9) .reddit {
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+   
+  }
+  
+  .main-social:hover {
+    width: 14em;
+    cursor: pointer;
+    transform: rotate(-45deg);
+  }
+  
+  .main-social:hover .main_back {
+    opacity: 0;
+  }
+  
+  .main-social:hover .card-social {
+    margin: 0.2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .main-social:hover .card-social svg {
+    transform: rotate(45deg);
+  }
+  
+  .main-social:hover .card-social:nth-child(5) {
+    border: transparent;
+  }
+  
+  .main-social:hover .text-social {
+    opacity: 0;
+    z-index: -3;
+  }
+  
+  .main-social:hover .instagram {
+    opacity: 1;
+  }
+  
+  .main-social:hover .twitter {
+    opacity: 1;
+  }
+  
+  .main-social:hover .dribble {
+    opacity: 1;
+  }
+  
+  .main-social:hover .codepen {
+    opacity: 1;
+  }
+  
+  .main-social:hover .uiverse {
+    opacity: 1;
+  }
+  
+  .main-social:hover .discord {
+    opacity: 1;
+  }
+  
+  .main-social:hover .github {
+    opacity: 1;
+  }
+  
+  .main-social:hover .telegram {
+    opacity: 1;
+  }
+  
+  .main-social:hover .reddit {
+    opacity: 1;
+  }
+  
+  .card-social:nth-child(1):hover {
+    background-color: #cc39a4;
+  }
+  .card-social:nth-child(1):hover .instagram {
+    fill: white;
+  }
+  
+  .card-social:nth-child(2):hover {
+    background-color: #03a9f4;
+  }
+  
+  .card-social:nth-child(2):hover .twitter {
+    fill: white;
+  }
+  
+  .card-social:nth-child(3):hover {
+    background-color: #ffb5d2;
+  }
+  
+  .card-social:nth-child(3):hover .dribble {
+    fill: white;
+  }
+  
+  .card-social:nth-child(4):hover {
+    background-color: #5f5f5f;
+  }
+  
+  .card-social:nth-child(4):hover .codepen {
+    fill: white;
+  }
+  
+  .card-social:nth-child(5):hover {
+    animation: backgroundIMG 0.1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .card-social:nth-child(5):hover .uiverse #paint0_linear_501_142 stop {
+    stop-color: white;
+  }
+  
+  .card-social:nth-child(5):hover .uiverse #paint1_linear_501_142 stop {
+    stop-color: white;
+  }
+  
+  .card-social:nth-child(5):hover .uiverse #paint2_linear_501_142 stop {
+    stop-color: white;
+  }
+  
+  @keyframes backgroundIMG {
+    100% {
+      background-image: linear-gradient(#bf66ff, #6248ff, #00ddeb);
+    }
+  }
+  
+  .card-social:nth-child(6):hover {
+    background-color: #8c9eff;
+  }
+  
+  .card-social:nth-child(6):hover .discord {
+    fill: white;
+  }
+  
+  .card-social:nth-child(7):hover {
+    background-color: rgb(138, 138, 138);
+  }
+  
+  .card-social:nth-child(7):hover .github {
+    fill: white;
+  }
+  
+  .card-social:nth-child(8):hover {
+    background-color: #29b6f6;
+  }
+  
+  .card-social:nth-child(8):hover .telegram > path:nth-of-type(1) {
+    fill: white;
+  }
+  
+  .card-social:nth-child(8):hover .telegram > path:nth-of-type(2) {
+    fill: #29b6f6;
+  }
+  
+  .card-social:nth-child(8):hover .telegram > path:nth-of-type(3) {
+    fill: #29b6f6;
+  }
+  
+  .card-social:nth-child(9):hover {
+    background-color: rgb(255, 69, 0);
+  }
+  
+  .card-social:nth-child(9) .reddit > g circle {
+    fill: rgb(255, 69, 0);
+  }
+  
+  .card-social:nth-child(9) .reddit > g path {
+    fill: white;
+  }
+  
+  .text-social {
+    position: absolute;
+    font-size: 0.7em;
+    transition: 0.4s ease-in-out;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.33em;
+    z-index: 3;
+  }
+  

@@ -1,0 +1,217 @@
+.showcase{
+    background-color: white;
+}
+
+.member-hero{
+    height: 100vh;
+    width: 100%;
+     display: flex;
+     flex-direction: column; 
+     justify-content: center;  
+     align-items: center;
+     color: white;
+     text-align: center;
+     background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.member-content-project{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-text-project{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-text-project h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    
+}
+
+.member-text-project p{
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 30px;
+
+}
+
+
+/* --------------------------------------------------- */
+.member-text-project .member-explore-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background: none;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+  }
+  
+  .member-text-project  .member-explore-btn::before {
+    margin-left: auto;
+  }
+  
+  .member-text-project .member-explore-btn::after, .member-explore-btn::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  .member-text-project .member-explore-btn:hover::after, .member-explore-btn:hover::before {
+    width: 100%;
+  }
+
+  @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+
+
+
+
+#memberCardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+   
+}
+
+.memberCardContent{
+    
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.memberCard {
+    background-color: white;
+    border-radius: 20px;
+    
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+
+.memberImagePlaceholder {
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.memberImagePlaceholder img{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+}
+
+.memberHeadline {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.memberDescription {
+    color: #888;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.memberSocial{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.memberSocial .memberIcon{
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.memberCardButton {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.memberCardBtton:hover {
+    background-color: #555;
+}
+
+.footer-wave-path-member {
+    fill: #00000000;
+}
+
+@media (max-width: 900px) {
+    #memberCardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+@media(max-width: 600px) {
+    .member-text-project h1{
+        font-size: 2.5rem;
+    }
+    .member-text-project p{
+        font-size: 1em;
+    }
+    #memberCardContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
