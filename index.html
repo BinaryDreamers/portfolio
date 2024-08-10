@@ -407,38 +407,42 @@
         <div class="text">
            Contact us
         </div>
-        <form action="#">
-           <div class="form-row">
-              <div class="input-data">
-                 <input type="text" required>
+        <form id="myForm" action="#">
+           <div class="form-row ">
+              <div class="input-data form-group">
+                 <input type="text" id="firstname" name="firstname">                 
                  <div class="underline"></div>
-                 <label for="">First Name</label>
+                 <label for="firstname">First Name</label>
+                 <span class="error" id="firstnameError"></span>
               </div>
-              <div class="input-data">
-                 <input type="text" required>
+              <div class="input-data form-group">
+                 <input type="text" id="lastname" name="lastname" >                 
                  <div class="underline"></div>
-                 <label for="">Last Name</label>
+                 <label for="lastname">Last Name</label>
+                 <span class="error" id="lastnameError"></span>
               </div>
            </div>
            <div class="form-row">
-              <div class="input-data">
-                 <input type="text" required>
+              <div class="input-data form-group">
+                 <input type="email" id="email" name="email" >
                  <div class="underline"></div>
-                 <label for="">Email Address</label>
+                 <label for="email">Email Address</label>
+                 <span class="error" id="emailError"></span>
               </div>
              
            </div>
            <div class="form-row">
-           <div class="input-data textarea">
-              <textarea rows="8" cols="80" required></textarea>
+           <div class="input-data textarea form-group">
+              <textarea id="message" name="message" rows="8" cols="80" ></textarea>              
               <br />
               <div class="underline"></div>
-              <label for="">Write your message</label>
-              <br />
+              <label for="message">Write your message</label>
+              <span class="error" id="messageError"></span>
+              <br />              
             </div>
           </div>
             <div class="submit-btn">
-              <button>Submit</button>
+              <button type="submit">Submit</button>
             </div>
         </form>
         </div>
@@ -666,6 +670,7 @@
     <script src='counter.js'></script>
     <script src='load.js'></script>
     <script src='scroll.js'></script>
+    <script src='form.js'></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         
