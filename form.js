@@ -48,7 +48,16 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
   // If form is valid, you can proceed with form submission or any other logic
   if (isValid) {
-    alert("Form submitted successfully!");
+    setTimeout(() => {
+      document.getElementById("popupOverlay").style.display = "block";
+      document.getElementById("popupWindow").style.display = "block";
+    }, 1000);
+
     // You can add code here to submit the form via AJAX or any other method
   }
+
+  document.getElementById("closePopup").addEventListener("click", function () {
+    document.getElementById("popupOverlay").style.display = "none";
+    document.getElementById("popupWindow").style.display = "none";
+  });
 });
