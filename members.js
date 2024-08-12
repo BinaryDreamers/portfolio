@@ -32,7 +32,7 @@ const memberData = [
     github: "https://github.com/theblackethiopiandude",
   },
   {
-    imageUrl: "assets/images/people/hamza1.jpg",
+    imageUrl: "assets/images/people/hamza.jpg",
     name: "Hamza Adil",
     role: "Tech Enthusiast",
     telegram: "https://t.me/SolanaGMI",
