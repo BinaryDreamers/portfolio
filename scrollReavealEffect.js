@@ -42,3 +42,9 @@ ScrollReveal().reveal(".aboutUs-li", {
   desktop: true,
   mobile: false,
 });
+ScrollReveal().reveal(".memberCardContent", {
+  delay: 200,
+  scale: 1.2,
+  reset: true,
+  interval: 200,
+});
