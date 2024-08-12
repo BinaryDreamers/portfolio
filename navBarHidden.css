@@ -53,7 +53,6 @@ header
   background: #111;
   transition: 0.5s;
   z-index: 2;
-  border-right: black 0.5px solid;
 }
 .showcase.active
 {
@@ -107,4 +106,14 @@ header
   cursor: pointer;
 }
 
+@media(max-width: 768px) {
+  .showcase{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
 
+  .close-div{
+    font-family: monospace;
+    font-size: 2em;
+    font-weight: 500;
+  }
+}
