@@ -86,7 +86,7 @@
 .abouUsBox p{
     width: 60%;
     font-weight: 500; 
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .abouUsBox li{
@@ -116,7 +116,7 @@
 .abouUsBox li p{
     margin: 0;
     padding: 0;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 500;
     width: 100%;
 }
@@ -160,6 +160,9 @@
     .aboutUsText p{
         font-size: 1em;
     }
+    .abouUsBox{
+        margin: 0;
+    }
     .abouUsBox li{
         margin: 0;
         padding: 10px;
@@ -168,10 +171,12 @@
 
     .abouUsBox p{
         width: 100%;
-        font-size: 0.8em;
+        font-size: 0.6em;
+        font-weight: 400;
     }
     .abouUsBox li p{
-        font-size: 0.8em;
+        font-size: 0.6em;
+        font-weight: 400;
     }
     .aboutUsContainer h2{
         font-size: 2em;
