@@ -10,7 +10,7 @@ const memberData = [
   {
     imageUrl: "assets/images/people/abraham.jpg",
     name: "Abraham Masresha",
-    role: "UI/UX Engineer",
+    role: "UI/UX Design",
     telegram: "https://t.me/Eziek95",
     linkedin: "",
     github: "https://github.com/ablixM",

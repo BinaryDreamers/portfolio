@@ -29,6 +29,16 @@ const contentData = [
     buttonLabel: "See More",
     link: "https://github.com/theblackethiopiandude/Minesweeper",
   },
+  {
+    imageUrl: "assets/images/Sender.png",
+    title: "እስክንድር",
+    description:
+      "An exciting take on the beloved minesweeper game, you may explore the depths of the Habeshan mines! Set off on a thrilling adventure, where each step might be the difference between success and failure. Play this clever and fascinating game of strategy .Stay away from lethal mines. Minesweeper is a compelling game for players of all ages, with beautiful graphics influenced by Habeshan settings and simple gaming principles.",
+    tag: "File Sharing",
+    date: "2024-08-09",
+    buttonLabel: "See More",
+    link: "",
+  },
 ];
 
 function createProjectCards() {
