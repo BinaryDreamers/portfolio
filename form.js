@@ -52,3 +52,18 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     document.getElementById("popupWindow").style.display = "none";
   });
 });
+
+function submitForm() {
+        
+  const form = document.getElementById("myForm")
+  const formData = new FormData(form)
+  const url = 'https://formsubmit.co/a5cdb0f000590b85e0a5c1f6c63b902c'
+  fetch(
+    url,
+    {
+      method: 'POST',
+      body: formData
+    }
+  )
+  return false
+}
