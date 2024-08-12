@@ -4,19 +4,19 @@ const memberData = [
     name: "Abel Dereje",
     role: "Web Developer",
     telegram: "https://t.me/Abela472",
-    linkedin: "",
-    github: "",
+    linkedin: "https://www.linkedin.com/in/abel-dereje-810816322/",
+    github: "https://github.com/abela472",
   },
   {
     imageUrl: "assets/images/people/abraham.jpg",
     name: "Abraham Masresha",
     role: "UI/UX Design",
     telegram: "https://t.me/Eziek95",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/abraham-masresha-85860229a/",
     github: "https://github.com/ablixM",
   },
   {
-    imageUrl: "assets/images/SWIFT-image.png",
+    imageUrl: "assets/images/people/dagi.jpg",
     name: "Dagmawi Fekadu",
     role: "UI Designer",
     telegram: "https://t.me/Lightweigh1",
@@ -44,7 +44,7 @@ const memberData = [
     name: "Heran Habtamu",
     role: "Web Developer",
     telegram: "https://t.me/hheerraann",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/heran-habtamu-b97a94288/",
     github: "https://github.com/hheran",
   },
 ];
@@ -64,9 +64,9 @@ function createMemberCards() {
                 <h2 class="memberHeadline">${data.name}</h2>
                 <p class="memberDescription">${data.role}</p>
                 <div class="memberSocial">
-                    <a href="${data.telegram}"><span class="memberIcon">Icon</span></a>
-                    <a href="${data.linkedin}"><span class="memberIcon">Icon</span></a>
-                    <a href="${data.github}"><span class="memberIcon">Icon</span></a>
+                    <a href="${data.telegram}" target="_blank"><span class="memberIcon">Icon</span></a>
+                    <a href="${data.linkedin}" target="_blank"><span class="memberIcon">Icon</span></a>
+                    <a href="${data.github}" target="_blank"><span class="memberIcon">Icon</span></a>
                 </div>
             </div>
         `;
