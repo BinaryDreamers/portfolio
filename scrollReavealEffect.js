@@ -10,13 +10,12 @@ ScrollReveal().reveal(".member-number", {
   mobile: false,
 });
 
-ScrollReveal().reveal(".overview", { delay: 200, scale: 1.2, reset: true });
+ScrollReveal().reveal(".overview", { delay: 200, reset: true });
 
 ScrollReveal().reveal(".stats", {
   delay: 200,
   easing: "ease-out",
   interval: 200,
-  scale: 1.2,
   reset: true,
   desktop: true,
   mobile: false,
