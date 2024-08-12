@@ -40,13 +40,13 @@ ScrollReveal().reveal(".aboutUs-li", {
   easing: "ease-out",
   interval: 200,
   scale: 1.2,
-  reset: true,
+
   desktop: true,
   mobile: false,
 });
 ScrollReveal().reveal(".memberCardContent", {
   delay: 200,
   scale: 1.2,
-  reset: true,
+
   interval: 200,
 });

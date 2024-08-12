@@ -216,6 +216,9 @@
         align-items: center;
         justify-content: center;
     }
+    .aboutUsContainer{
+        width: 100%;
+    }
 
 }
 
