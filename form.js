@@ -57,7 +57,7 @@ function submitForm() {
         
   const form = document.getElementById("myForm")
   const formData = new FormData(form)
-  const url = 'https://formsubmit.co/a5cdb0f000590b85e0a5c1f6c63b902c'
+  const url = 'https://formsubmit.co/eyosiyashabtemariam@gmail.com'
   fetch(
     url,
     {
