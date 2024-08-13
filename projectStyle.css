@@ -70,7 +70,6 @@
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
     display: block;
     transition: 0.5s;
   }

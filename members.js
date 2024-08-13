@@ -10,7 +10,7 @@ const memberData = [
   {
     imageUrl: "assets/images/people/abraham.jpg",
     name: "Abraham Masresha",
-    role: "UI/UX Design",
+    role: "UI/UX Designer",
     telegram: "https://t.me/Eziek95",
     linkedin: "https://www.linkedin.com/in/abraham-masresha-85860229a/",
     github: "https://github.com/ablixM",
@@ -26,7 +26,7 @@ const memberData = [
   {
     imageUrl: "assets/images/people/eyosi.jpg",
     name: "Eyosiyas Habtemariam",
-    role: "Software Enginner",
+    role: "Software Engineer",
     telegram: "https://t.me/Wanted_person",
     linkedin: "https://www.linkedin.com/in/eyosiyas-habtemariam/",
     github: "https://github.com/theblackethiopiandude",
@@ -64,9 +64,9 @@ function createMemberCards() {
                 <h2 class="memberHeadline">${data.name}</h2>
                 <p class="memberDescription">${data.role}</p>
                 <div class="memberSocial">
-                    <a href="${data.telegram}" target="_blank"><span class="memberIcon"><img src="assets/svg/telegram-social.svg" alt="telegram"></span></a>
-                    <a href="${data.linkedin}" target="_blank"><span class="memberIcon"><img src="assets/svg/linkedin-social.svg" alt="linkedin"></span></a>
-                    <a href="${data.github}" target="_blank"><span class="memberIcon"><img src="assets/svg/github-social.svg" alt="github"></span></a>
+                    <a href="${data.telegram}" target="_blank"><span class="memberIcon"><img src="assets/svg/telegram-members.svg" alt="telegram"></span></a>
+                    <a href="${data.linkedin}" target="_blank"><span class="memberIcon"><img src="assets/svg/linkedin-members.svg" alt="linkedin"></span></a>
+                    <a href="${data.github}" target="_blank"><span class="memberIcon"><img src="assets/svg/github-members.svg" alt="github"></span></a>
                 </div>
             </div>
         `;

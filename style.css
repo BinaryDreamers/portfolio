@@ -198,14 +198,19 @@ text-fill-color: transparent;
 .stat-title p{
     font-size: 3em;
     color: rgb(0, 0, 0);
-    font-weight: 300;
+    font-weight: 500;
     line-height: 50px;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 .stat-title span{
     font-size: 1.5em;
     color: rgb(0, 0, 0);
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .stat-detail-btn{
@@ -325,23 +330,29 @@ text-fill-color: transparent;
         font-size: 3em;
     }
     .stat-title p{
-        font-size: 2em;
-        font-weight: 200;
+        font-size: 2.5em;
+        font-weight: 500;
         line-height: 30px;
-        padding: 2px;
+        padding-bottom: 5px;
+        background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        
         
     }
 
     .stat-number p{
         font-size: 1.5em;
-        font-weight: 200;
+        font-weight: 300;
         padding: 25px 10px;
     }
 
     .stat-title span{
         font-size: 1em;
         color: rgb(0, 0, 0);
-        font-weight: 200;
+        font-weight: 400;
         padding-left: 5px;
         padding-bottom: 10px;
     }
@@ -583,10 +594,15 @@ text-fill-color: transparent;
     }
 
     .card-inner p{
-        font-size: 1.5em;
-        font-weight: 200;
+        font-size: 2.5em;
+        font-weight: 500;
         color: rgb(0, 0, 0);
         padding: 10px; 
+        background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
     }
 
     .card-inner span p{
