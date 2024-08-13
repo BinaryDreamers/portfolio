@@ -1,0 +1,171 @@
+body{
+    transition: background-color 0.5s, color 0.5s;
+}
+
+
+/* body.dark-mode {
+    background-color: #121212 !important;
+    color: white !important;
+}
+
+body.dark-mode h1 {
+    color: rgb(250, 250, 250) !important;
+}
+
+body.dark-mode p {
+    color: rgb(255, 255, 255) !important;
+}
+
+body.dark-mode a {
+    color: rgb(255, 255, 255) !important;
+}
+
+body.dark-mode .popup {
+    background: #333 !important;
+} */
+
+body.dark-mode .showcase{
+    background: #3c3c3c !important;
+    border-color: #3c3c3c;
+}
+body.dark-mode .stick{
+    background: #3c3c3c !important;
+    color: white !important;  
+    border-color: #3c3c3c;
+}
+body.dark-mode .links{
+    color: white !important;  
+}
+body.dark-mode .menu{
+    background: #3c3c3c !important;
+    color: white !important;  
+    border-color: #3c3c3c; 
+}
+body.dark-mode .toggle-mode{
+    background: #3c3c3c !important;  
+    border-color: #3c3c3c; 
+}
+
+body.dark-mode .section-two{
+    background: #121212 !important;
+    color: white !important;
+    
+}
+body.dark-mode .sub-text-member{
+    color: white !important;   
+}
+
+
+body.dark-mode .section-three{
+    background: #121212 !important;
+    color: white !important;
+    
+}
+
+body.dark-mode .section-four{
+    background: #121212 !important;
+    color: white !important
+}
+body.dark-mode .div-first-text{
+    color: white !important;   
+}
+
+body.dark-mode .div-first li{
+    color: white !important;   
+}
+
+body.dark-mode .section-five{
+    background: #121212 !important;
+    color: white !important;   
+}
+
+body.dark-mode .section-six{
+    background: #121212 !important;
+    color: white !important;   
+}
+
+body.dark-mode .send-email{
+    background: #121212 !important;
+    color: white !important;   
+}
+
+body.dark-mode .input-data input{
+    background: #121212 !important;
+    color: white !important;   
+}
+
+body.dark-mode .textarea textarea{
+    background: #121212 !important;
+    color: white !important;   
+}
+body.dark-mode .textarea label{
+    background: #121212 !important;
+    color: #a700e9 !important;   
+}
+
+body.dark-mode .send-email{
+    background: #121212 !important;
+    color: white !important;   
+}
+
+body.dark-mode .send-email-logo{
+    background: #121212 !important;
+    color: white !important;   
+}
+body.dark-mode .footer-wave-path{
+    fill: #121212 !important;
+    color: white !important;   
+}
+/* ----------------------------------------------- */
+body.dark-mode .project-hero{
+    background-image: linear-gradient(-225deg, #147b8b 0%, #115789 48%, #403e75 100%);
+}
+body.dark-mode .project-card-container{
+    background: #121212 !important;
+    color: white !important; 
+}
+
+body.dark-mode .card-content{
+    background: #333 !important;
+    color: white !important; 
+}
+
+body.dark-mode .card-description{
+    background: #333 !important;
+    color: white !important; 
+}
+body.dark-mode .footer{
+    background-image: linear-gradient(60deg, #447ba7 0%, #73895c 100%);
+}
+/* --------------------------------------------------- */
+
+body.dark-mode .member-hero{
+    background-image: linear-gradient(to top, #007291 0%, #003c9d 100%);
+}
+body.dark-mode #memberCardContainer{
+    background: #121212 !important; 
+}
+body.dark-mode .memberCard{
+    background: #333 !important; 
+    color: white !important;
+}
+/* --------------------------------------------------------------------- */
+
+body.dark-mode .aboutUsBox p{
+    color: white !important;
+}
+body.dark-mode .aboutUs-li{
+    color: white !important;
+    text-decoration: none !important;
+}
+body.dark-mode .aboutUsBox .footer-wave-path-aboutUs{
+    fill: #ffffff;
+}
+
+
+
+
+/* body.dark-mode section{
+    background: #333 !important;
+    color: white !important;
+} */

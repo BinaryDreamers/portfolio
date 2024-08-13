@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="load.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="darkmode.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,12 +46,12 @@
       </ul>
     </div>
 
-    <div id="loader" class="loader">
+    <!-- <div id="loader" class="loader">
       <video id="timedVideo" autoplay muted>
         <source src="assets/video/Simple-Dot-[remix].mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-    </div>
+    </div> -->
 
     <nav class="nav-bar">
       <div class="container">
@@ -98,7 +99,7 @@
         </button>
       </div>
 
-      <section class="hero-container">
+      <div class="hero-container">
         <div class="hero-content">
           <div class="shape">
             <video class="hero-video" autoplay muted loop>
@@ -131,7 +132,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <main>
         <section class="section-two">
@@ -163,7 +164,6 @@
               <div class="circle"></div>
               <div class="circle"></div>
               <div class="card-inner">
-                
                 <p> Dream</p>
               </div>
             </div>
@@ -777,6 +777,7 @@
     <script src="scrollReavealEffect.js"></script>
     <script src="assets/CDN/typed.js"></script>
     <script src="confetti.js"></script>
+    <script src="mode.js"></script>
     <script>
       var typed = new Typed(".auto-type", {
         strings: ["Dream", "Code", "Achieve", "Innovate", "Create", "Inspire"],

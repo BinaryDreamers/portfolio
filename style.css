@@ -7,6 +7,7 @@ body {
     line-height: 1.6;
     background-color: #333;
     scroll-behavior: smooth;
+    transition: all 0.5s ease;
 }
 
 
@@ -160,7 +161,7 @@ text-fill-color: transparent;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #00000000;
     width: 95%;
     border-bottom: rgb(0, 0, 0) solid 0.5px; 
     
@@ -197,7 +198,7 @@ text-fill-color: transparent;
 
 .stat-title p{
     font-size: 3em;
-    color: rgb(0, 0, 0);
+    color: rgb(107, 107, 107);
     font-weight: 500;
     line-height: 50px;
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
@@ -209,7 +210,7 @@ text-fill-color: transparent;
 
 .stat-title span{
     font-size: 1.5em;
-    color: rgb(0, 0, 0);
+    color: rgb(131, 131, 131);
     font-weight: 400;
 }
 
@@ -232,6 +233,7 @@ text-fill-color: transparent;
   .section-four{
     display: flex;
     flex-direction: column;
+    background-color: rgb(255, 255, 255);
     width: 100%;
   }
 
@@ -241,16 +243,9 @@ text-fill-color: transparent;
     flex-direction: column;
     /* justify-content: center;
     align-items: center; */
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     width: 100%;
   }
 
-  .overview-container:nth-child(2){
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  }
-  .overview-container:nth-child(3){
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  }
   
 
 
@@ -282,7 +277,7 @@ text-fill-color: transparent;
 }
 
 .section-five{
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-color: white;
 }
     
 
@@ -291,7 +286,7 @@ text-fill-color: transparent;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #fefefe;
+    background-color: white;
     width: 100%;
     
     position: relative;
@@ -318,7 +313,29 @@ text-fill-color: transparent;
     
 }
 
-
+.section-two{
+    width: 100%;
+    height: 100%;
+  
+    background: #ffffff;
+    --gap: 5em;
+    --line: 1px;
+    --color: rgba(68, 68, 68, 0.2);
+  
+    background-image: linear-gradient(
+        -90deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      ),
+      linear-gradient(
+        0deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      );
+    background-size: var(--gap) var(--gap);
+}
 
   
 
@@ -351,7 +368,6 @@ text-fill-color: transparent;
 
     .stat-title span{
         font-size: 1em;
-        color: rgb(0, 0, 0);
         font-weight: 400;
         padding-left: 5px;
         padding-bottom: 10px;
@@ -398,26 +414,7 @@ text-fill-color: transparent;
     .section-two{
         display: flex;
         flex-direction: column;
-        background-color: #ffffff;
         width: 100%;
-        background: #ffffff;
-        --gap: 5em;
-        --line: 1px;
-        --color: rgba(255, 255, 255, 0.2);
-      
-        background-image: linear-gradient(
-            -90deg,
-            transparent calc(var(--gap) - var(--line)),
-            var(--color) calc(var(--gap) - var(--line) + 1px),
-            var(--color) var(--gap)
-          ),
-          linear-gradient(
-            0deg,
-            transparent calc(var(--gap) - var(--line)),
-            var(--color) calc(var(--gap) - var(--line) + 1px),
-            var(--color) var(--gap)
-          );
-        background-size: var(--gap) var(--gap);
     }
 
     .member-counter{
@@ -430,7 +427,6 @@ text-fill-color: transparent;
 
     .stat-title span{
         font-size: 1em;
-        color: rgb(0, 0, 0);
         font-weight: 200;
         padding-left: 5px;
         padding-bottom: 10px;
@@ -520,28 +516,8 @@ text-fill-color: transparent;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        background-color: #000000;
         width: 100%;
-        height: 400px;
-        background: #fdfdfd;
-        --gap: 5em;
-        --line: 1px;
-        --color: rgba(0, 0, 0, 0.767);
-      
-        background-image: linear-gradient(
-            -90deg,
-            transparent calc(var(--gap) - var(--line)),
-            var(--color) calc(var(--gap) - var(--line) + 1px),
-            var(--color) var(--gap)
-          ),
-          linear-gradient(
-            0deg,
-            transparent calc(var(--gap) - var(--line)),
-            var(--color) calc(var(--gap) - var(--line) + 1px),
-            var(--color) var(--gap)
-          );
-        background-size: var(--gap) var(--gap);
-        
+        height: 400px;   
     }
 
     .member-counter{
