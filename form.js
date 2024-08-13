@@ -1,3 +1,5 @@
+let isValid = true;
+
 document.getElementById("myForm").addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent the default form submission
 
@@ -11,7 +13,6 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   const email = document.querySelector("#email").value.trim();
   const message = document.querySelector("#message").value.trim();
 
-  let isValid = true;
 
   if (!firstname) {
     document.getElementById("firstnameError").textContent =
@@ -88,3 +89,21 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     document.getElementById("popupWindow").style.display = "none";
   });
 });
+
+function submitForm() {
+  if(isValid){
+    const form = document.getElementById("myForm")
+    const subject = document.getElementById("form-subject")
+    subject.value = `New Submission Binary Dreamers, ${document.getElementById("firstname").value} ${document.getElementById("lastname").value}`
+    const formData = new FormData(form)
+    const url = 'https://api.web3forms.com/submit'
+    fetch(
+      url,
+      {
+        method: 'POST',
+        body: formData
+      }
+    )
+  }
+  return false
+}
