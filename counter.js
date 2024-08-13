@@ -29,7 +29,7 @@ function handleIntersection(entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       increaseNumberAnimation("nbr", 9, 300);
-      increaseNumberAnimation("leetCode-nbr", 40, 100);
+      increaseNumberAnimation("leetCode-nbr", 228, 40);
       increaseNumberAnimation("meetUp-nbr", 20, 200);
       observer.unobserve(entry.target);
     }
