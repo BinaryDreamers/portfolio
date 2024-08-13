@@ -42,7 +42,6 @@
         <li><a href="project.html">Projects</a></li>
         <li><a href="members.html">Members</a></li>
         <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
       </ul>
     </div>
 
@@ -60,7 +59,7 @@
             <span>BINARY DREAMERS<span class="sub">TM</span></span>
           </p>
         </div>
-
+        
         <div class="left"></div>
 
         <div class="nav-links">
@@ -69,7 +68,6 @@
             <li><a id="bl" href="project.html">Projects</a></li>
             <li><a id="bl" href="members.html">Members</a></li>
             <li><a id="bl" href="aboutUs.html">About Us</a></li>
-            <li><a id="bl" href="#">Contact Us</a></li>
           </div>
         </div>
 
@@ -432,7 +430,7 @@
         <section id="targetApply" class="section-six">
           <div class="send-email">
             <div class="text">Contact us</div>
-            <form id="myForm" action="#">
+            <form id="myForm" onsubmit="return submitForm()" method="POST">
               <div class="form-row">
                 <div class="input-data form-group">
                   <input type="text" id="firstname" name="firstname" />

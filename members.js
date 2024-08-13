@@ -64,9 +64,9 @@ function createMemberCards() {
                 <h2 class="memberHeadline">${data.name}</h2>
                 <p class="memberDescription">${data.role}</p>
                 <div class="memberSocial">
-                    <a href="${data.telegram}" target="_blank"><span class="memberIcon">Icon</span></a>
-                    <a href="${data.linkedin}" target="_blank"><span class="memberIcon">Icon</span></a>
-                    <a href="${data.github}" target="_blank"><span class="memberIcon">Icon</span></a>
+                    <a href="${data.telegram}" target="_blank"><span class="memberIcon"><img src="assets/svg/telegram-social.svg" alt="telegram"></span></a>
+                    <a href="${data.linkedin}" target="_blank"><span class="memberIcon"><img src="assets/svg/linkedin-social.svg" alt="linkedin"></span></a>
+                    <a href="${data.github}" target="_blank"><span class="memberIcon"><img src="assets/svg/github-social.svg" alt="github"></span></a>
                 </div>
             </div>
         `;
