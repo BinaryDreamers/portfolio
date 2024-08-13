@@ -42,7 +42,7 @@ Collaborate with the maintainers to review and address any feedback or requested
 Once your pull request is approved, it will be merged into the main branch. You may be notified if additional changes are needed before merging.
 
 ## Code of Conduct
-Please adhere to our [Code of Conduct]() while participating in the project. We strive to maintain a respectful and inclusive community.
+Please adhere to our [Code of Conduct](https://github.com/BinaryDreamers/portfolio/blob/main/CODE_OF_CONDUCT.md) while participating in the project. We strive to maintain a respectful and inclusive community.
 
 ## Reporting Issues
 If you encounter any issues or have suggestions, please open an issue in the repository. Provide as much detail as possible to help us understand and address the problem.
