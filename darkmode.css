@@ -27,94 +27,114 @@ body.dark-mode .popup {
 body.dark-mode .showcase{
     background: #3c3c3c !important;
     border-color: #3c3c3c;
+    transition: all 0.5s ease; 
 }
 body.dark-mode .stick{
     background: #3c3c3c !important;
     color: white !important;  
     border-color: #3c3c3c;
+    transition: all 0.5s ease; 
 }
 body.dark-mode .links{
-    color: white !important;  
+    color: white !important; 
+    transition: all 0.5s ease;  
 }
 body.dark-mode .menu{
     background: #3c3c3c !important;
     color: white !important;  
     border-color: #3c3c3c; 
+    transition: all 0.5s ease; 
 }
 body.dark-mode .toggle-mode{
     background: #3c3c3c !important;  
-    border-color: #3c3c3c; 
+    border-color: #3c3c3c;
+    transition: all 0.5s ease;  
 }
 
 body.dark-mode .section-two{
     background: #121212 !important;
     color: white !important;
+    transition: all 0.5s ease; 
     
 }
 body.dark-mode .sub-text-member{
-    color: white !important;   
+    color: white !important; 
+    transition: all 0.5s ease;   
 }
 
 
 body.dark-mode .section-three{
     background: #121212 !important;
     color: white !important;
+    transition: all 0.5s ease; 
     
 }
 
 body.dark-mode .section-four{
     background: #121212 !important;
     color: white !important
+    transition: all 0.5s ease; 
 }
 body.dark-mode .div-first-text{
-    color: white !important;   
+    color: white !important;
+    transition: all 0.5s ease;    
 }
 
 body.dark-mode .div-first li{
-    color: white !important;   
+    color: white !important;
+    transition: all 0.5s ease;    
 }
 
 body.dark-mode .section-five{
     background: #121212 !important;
-    color: white !important;   
+    color: white !important; 
+    transition: all 0.5s ease;   
 }
 
 body.dark-mode .section-six{
     background: #121212 !important;
-    color: white !important;   
+    color: white !important;
+    transition: all 0.5s ease;    
 }
 
 body.dark-mode .send-email{
     background: #121212 !important;
-    color: white !important;   
+    color: white !important; 
+    transition: all 0.5s ease;   
 }
 
 body.dark-mode .input-data input{
     background: #121212 !important;
-    color: white !important;   
+    color: white !important;
+    transition: all 0.5s ease;    
 }
 
 body.dark-mode .textarea textarea{
     background: #121212 !important;
-    color: white !important;   
+    color: white !important; 
+    transition: all 0.5s ease;   
 }
 body.dark-mode .textarea label{
     background: #121212 !important;
-    color: #a700e9 !important;   
+    color: #a700e9 !important;
+    transition: all 0.5s ease;    
 }
 
 body.dark-mode .send-email{
     background: #121212 !important;
-    color: white !important;   
+    color: white !important; 
+    transition: all 0.5s ease;   
 }
 
 body.dark-mode .send-email-logo{
     background: #121212 !important;
-    color: white !important;   
+    color: white !important;
+    transition: all 0.5s ease;    
 }
 body.dark-mode .footer-wave-path{
     fill: #121212 !important;
-    color: white !important;   
+    color: white !important; 
+    transition: all 0.5s ease;   
 }
 /* ----------------------------------------------- */
 body.dark-mode .project-hero{
@@ -123,43 +143,53 @@ body.dark-mode .project-hero{
 body.dark-mode .project-card-container{
     background: #121212 !important;
     color: white !important; 
+    transition: all 0.5s ease; 
 }
 
 body.dark-mode .card-content{
     background: #333 !important;
     color: white !important; 
+    transition: all 0.5s ease; 
 }
 
 body.dark-mode .card-description{
     background: #333 !important;
     color: white !important; 
+    transition: all 0.5s ease; 
 }
 body.dark-mode .footer{
     background-image: linear-gradient(60deg, #447ba7 0%, #73895c 100%);
+    transition: all 0.5s ease; 
 }
 /* --------------------------------------------------- */
 
 body.dark-mode .member-hero{
     background-image: linear-gradient(to top, #007291 0%, #003c9d 100%);
+    transition: all 0.5s ease; 
 }
 body.dark-mode #memberCardContainer{
     background: #121212 !important; 
+    transition: all 0.5s ease; 
 }
 body.dark-mode .memberCard{
     background: #333 !important; 
     color: white !important;
+    transition: all 0.5s ease; 
 }
 /* --------------------------------------------------------------------- */
 
 body.dark-mode .aboutUsBox p{
     color: white !important;
+    transition: all 0.5s ease; 
 }
 body.dark-mode .aboutUs-li{
     color: white !important;
     text-decoration: none !important;
+    transition: all 0.5s ease; 
 }
 body.dark-mode .aboutUsBox .footer-wave-path-aboutUs{
     fill: #ffffff;
+    transition: all 0.5s ease; 
 }
 
 
