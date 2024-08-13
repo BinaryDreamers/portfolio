@@ -33,7 +33,7 @@ const contentData = [
     imageUrl: "assets/images/Sender.png",
     title: "እስክንድር",
     description:
-      "An exciting take on the beloved minesweeper game, you may explore the depths of the Habeshan mines! Set off on a thrilling adventure, where each step might be the difference between success and failure. Play this clever and fascinating game of strategy .Stay away from lethal mines. Minesweeper is a compelling game for players of all ages, with beautiful graphics influenced by Habeshan settings and simple gaming principles.",
+      "እስክንድር (Eskinder) is a playful desktop file-sharing application inspired by the mobile app Xender. Eskinder brings the ease and convenience of file sharing to Windows PCs using C# Windows Forms. Featuring a familiar drag-and-drop interface, it allows users to share files effortlessly over local networks, while offering real-time transfer updates and customizable options. While its design adds a touch of humor, Eskinder maintains a focus on reliable and secure file transfers, making it a fun yet practical tool for both casual and professional use.",
     tag: "File Sharing",
     date: "2024-08-09",
     buttonLabel: "See More",
