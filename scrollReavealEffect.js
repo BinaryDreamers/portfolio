@@ -1,7 +1,7 @@
 ScrollReveal().reveal(".nav-bar", { delay: 200 });
 ScrollReveal().reveal(".hero-container", { delay: 200 });
-ScrollReveal().reveal(".member-number", { delay: 200, reset: true });
-ScrollReveal().reveal(".overview", { delay: 200, reset: true });
+ScrollReveal().reveal(".member-number", { delay: 200 });
+ScrollReveal().reveal(".overview", { delay: 200 });
 ScrollReveal().reveal(".stats", { delay: 200 });
 ScrollReveal().reveal(".hero-container", { delay: 200 });
 
@@ -29,10 +29,9 @@ ScrollReveal().reveal(".hero-container", { delay: 200 });
 
 ScrollReveal().reveal(".hero-text-project", { delay: 400, origin: "left" });
 ScrollReveal().reveal(".project-card", {
-  delay: 400,
-  easing: "ease-out",
-  origin: "left",
-  reset: true,
+  delay: 200,
+  scale: 1.2,
+  interval: 200,
 });
 
 ScrollReveal().reveal(".aboutUs-li", {
