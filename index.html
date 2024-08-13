@@ -59,7 +59,7 @@
             <span>BINARY DREAMERS<span class="sub">TM</span></span>
           </p>
         </div>
-        
+
         <div class="left"></div>
 
         <div class="nav-links">
@@ -293,25 +293,24 @@
 
           <div class="overview-container">
             <div class="overview">
-                <a href="aboutUs.html">
-                  <div class="card-overview">
-                    <div class="content">
-                      <p class="para">
-                        Our Core Values
-                      </p>
-                      
-                      <div>
-                        <img src="assets/svg/solar--arrow-right-broken.svg" alt="">
-                      </div>
-                      
+              <a href="aboutUs.html">
+                <div class="card-overview">
+                  <div class="content">
+                    <p class="para">Our Core Values</p>
+
+                    <div>
+                      <img
+                        src="assets/svg/solar--arrow-right-broken.svg"
+                        alt=""
+                      />
                     </div>
                   </div>
-                </a>
+                </div>
+              </a>
             </div>
-    
-    
-          <div class="div-first">
-            <div >
+
+            <div class="div-first">
+              <div>
                 <p class="div-first-title">Team Overview</p>
                 <li>
                   <h2>Collaboration:</h2>
@@ -355,37 +354,65 @@
 
           <div class="overview-container">
             <div class="div-first div-first2">
-                <div >
-                    <p class="div-first-title">Team Overview</p>
-                        <li><h2>Award-Winning Projects:</h2> <p> Our team has been recognized for excellence in software development with awards from industry-leading organizations.</p></li>
-                        <li><h2>Excellence:</h2> <p>We hold ourselves to the highest standards of quality and professionalism in everything we do.</p></li>
-                        <li><h2>Integrity:</h2> <p>We operate with honesty and transparency, building trust with our clients and within our team.</p></li>
-                        <li><h2>Growth:</h2> <p> We are dedicated to lifelong learning and development, encouraging each team member to grow both personally and professionally.</p></li>
-                        <li><h2>Innovation:</h2>  <p>We are committed to exploring new ideas and technologies, continually pushing the limits of what is possible.</p></li>
-                </div>
+              <div>
+                <p class="div-first-title">Team Overview</p>
+                <li>
+                  <h2>Award-Winning Projects:</h2>
+                  <p>
+                    Our team has been recognized for excellence in software
+                    development with awards from industry-leading organizations.
+                  </p>
+                </li>
+                <li>
+                  <h2>Excellence:</h2>
+                  <p>
+                    We hold ourselves to the highest standards of quality and
+                    professionalism in everything we do.
+                  </p>
+                </li>
+                <li>
+                  <h2>Integrity:</h2>
+                  <p>
+                    We operate with honesty and transparency, building trust
+                    with our clients and within our team.
+                  </p>
+                </li>
+                <li>
+                  <h2>Growth:</h2>
+                  <p>
+                    We are dedicated to lifelong learning and development,
+                    encouraging each team member to grow both personally and
+                    professionally.
+                  </p>
+                </li>
+                <li>
+                  <h2>Innovation:</h2>
+                  <p>
+                    We are committed to exploring new ideas and technologies,
+                    continually pushing the limits of what is possible.
+                  </p>
+                </li>
               </div>
-    
-              <div class="overview">
-                <a href="aboutUs.html">
-                  <div class="card-overview">
-                    <div class="content">
-                      <p class="para">
-                        Our Achievements
-                      </p>
-    
-                      <div>
-                        <img src="assets/svg/solar--arrow-right-broken.svg" alt="">
-                      </div>
+            </div>
+
+            <div class="overview">
+              <a href="aboutUs.html">
+                <div class="card-overview">
+                  <div class="content">
+                    <p class="para">Our Achievements</p>
+
+                    <div>
+                      <img
+                        src="assets/svg/solar--arrow-right-broken.svg"
+                        alt=""
+                      />
                     </div>
                   </div>
-                </a>
+                </div>
+              </a>
             </div>
-    
-        </div>
-       
-    </section>
-
-
+          </div>
+        </section>
 
         <section class="section-five">
           <div class="main-social">
@@ -431,6 +458,18 @@
           <div class="send-email">
             <div class="text">Contact us</div>
             <form id="myForm" onsubmit="return submitForm()" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="3ee387ba-23a1-41d7-9741-ceb2fce9e7c2"
+              />
+              <input
+                id="form-subject"
+                type="hidden"
+                name="subject"
+                value="New Submission on Binary Dreamers"
+              />
+              <input type="hidden" name="from_name" value="Binary Dreamers" />
               <div class="form-row">
                 <div class="input-data form-group">
                   <input type="text" id="firstname" name="firstname" />
@@ -737,7 +776,7 @@
     <script src="scrollReveal.js"></script>
     <script src="scrollReavealEffect.js"></script>
     <script src="assets/CDN/typed.js"></script>
-    <script src='confetti.js'></script>
+    <script src="confetti.js"></script>
     <script>
       var typed = new Typed(".auto-type", {
         strings: ["Dream", "Code", "Achieve", "Innovate", "Create", "Inspire"],
