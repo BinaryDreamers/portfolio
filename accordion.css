@@ -37,7 +37,7 @@
 }
 
 .accordion-header:hover {
-    background-color: #f9f9f9;
+    background-color: #05009d0a;
 }
 
 .accordion-content {
@@ -45,7 +45,6 @@
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.4s ease;
     padding: 0 15px;
-    background-color: #fff;
 }
 
 .accordion-content p {
