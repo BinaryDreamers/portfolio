@@ -22,7 +22,6 @@
     width: 14em;
     align-items: center;
     justify-content: center;
-   
     transition: transform 0.3s ease-in-out;
     
   }
@@ -311,3 +310,9 @@
     z-index: 3;
   }
   
+  @media (max-width: 768px) {
+    .main-social {
+      display: none;
+    }
+  
+  }
