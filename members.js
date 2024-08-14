@@ -18,7 +18,7 @@ const memberData = [
   {
     imageUrl: "assets/images/people/dagi.jpg",
     name: "Dagmawi Fekadu",
-    role: "UI Designer",
+    role: "Software Engineer",
     telegram: "https://t.me/Lightweigh1",
     linkedin: "https://et.linkedin.com/in/noah-undefined-80179b322",
     github: "https://github.com/I-hates-debugging",
@@ -26,7 +26,7 @@ const memberData = [
   {
     imageUrl: "assets/images/people/eyosi.jpg",
     name: "Eyosiyas Habtemariam",
-    role: "Software Engineer",
+    role: "Project Manager",
     telegram: "https://t.me/Wanted_person",
     linkedin: "https://www.linkedin.com/in/eyosiyas-habtemariam/",
     github: "https://github.com/theblackethiopiandude",
@@ -34,7 +34,7 @@ const memberData = [
   {
     imageUrl: "assets/images/people/hamza.jpg",
     name: "Hamza Adil",
-    role: "Tech Enthusiast",
+    role: "Software Engineer",
     telegram: "https://t.me/SolanaGMI",
     linkedin: "",
     github: "https://github.com/Hamzaadil101",
