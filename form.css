@@ -53,12 +53,27 @@ form .form-row .textarea{
   color: rgb(0, 0, 0);
   
 }
-.input-data input:focus ~ label, .textarea textarea:focus ~ label,
-.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+.input-data input[type="text"]:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input[type="text"]:valid ~ label, .textarea textarea:valid ~ label{
   transform: translateY(-20px);
   font-size: 14px;
   color: #a700e9;
 }
+
+.input-data input[type="email"]:focus ~ label ,
+.input-data input[type="email"]:invalid ~ label { 
+  transform: translateY(-20px); 
+  font-size: 14px;
+  color: #a700e9;
+}
+.input-data input[type="email"]:focus ~ label ,
+.input-data input[type="email"]:valid ~ label { 
+  transform: translateY(-20px); 
+  font-size: 14px;
+  color: #a700e9;
+}
+
+ 
 .textarea textarea{
   resize: none;
   padding-top: 10px;
@@ -190,6 +205,19 @@ form .form-row .textarea{
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
   transition: all 0.3s ease;
+}
+
+#nameError {
+  color: #ff0000;
+  font-size: 14px;
+  display: none;
+  margin-top: 5px;
+}
+#lastError {
+  color: #ff0000;
+  font-size: 14px;
+  display: none;
+  margin-top: 5px;
 }
 
 @media (max-width: 768px) {

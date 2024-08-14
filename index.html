@@ -36,6 +36,8 @@
     />
   </head>
   <body>
+    <div id="notification" class="notification hidden">
+  </div>
     <div class="menu">
       <div class="close-div">close</div>
 
@@ -589,12 +591,14 @@
                   <div class="underline"></div>
                   <label for="firstname">First Name</label>
                   <span class="error" id="firstnameError"></span>
+                  <div class="error-message" id="nameError">Numbers are not allowed.</div> 
                 </div>
                 <div class="input-data form-group">
                   <input type="text" id="lastname" name="lastname" />
                   <div class="underline"></div>
                   <label for="lastname">Last Name</label>
                   <span class="error" id="lastnameError"></span>
+                  <div class="error-message" id="lastError">Numbers are not allowed.</div>
                 </div>
               </div>
               <div class="form-row">
