@@ -68,8 +68,6 @@ body {
 }
 
 .title .main-title{
-    font-size: 4.4em;
-   
     text-align: center;
 }
 
@@ -388,6 +386,9 @@ text-fill-color: transparent;
     .nav-links{
         display: none;
     }
+    .title .main-title{
+        font-size: 3.1em;
+    }
 
     .shape{
         width: 100%;
@@ -502,15 +503,21 @@ text-fill-color: transparent;
         display: none;
     }
          
+}
 
-  
-    
-   
- 
+
+@media(max-width: 1025){
+    .title .main-title{
+        font-size: 3.1em;
+    }
 }
 
 /* devices with a viewport width of 769 pixels or more */
 @media(min-width: 769px) {
+    .title .main-title{
+        font-size: 3.5em;
+    }
+
     .section-two{
         display: flex;
         flex-direction: row;
