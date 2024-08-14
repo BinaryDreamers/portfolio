@@ -138,7 +138,6 @@
 }
 
 input:checked~.sun{
-    
     transform: rotate(360deg) scale(0);
 }
 
@@ -146,7 +145,6 @@ input:checked~.sun{
 
 .moon{
     font-size: 2em;
-    
     z-index: 3;
     transition: 1s ease;
     transform: scale(0);

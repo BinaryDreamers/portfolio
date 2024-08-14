@@ -250,7 +250,7 @@ text-fill-color: transparent;
   .div-first{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    
     align-items: center;
     background-color: #00000000;
     width: 50%;
@@ -646,23 +646,9 @@ text-fill-color: transparent;
         padding: 0 20px;
     }
 
-    .div-first li{
-        list-style: none;
-        padding: 0 10px ;
-        color: rgb(0, 0, 0);
-        font-weight: 400;
-        font-size: .9em;
-    }
 
-    .div-first li h2{
-        font-size: 1.5em;
-        font-weight: 700;
-        background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
-    }
+
+
 
     .div-first-text span{
         font-size: 1.5em;
@@ -727,6 +713,6 @@ text-fill-color: transparent;
         font-size: 8em;
         color: white;
         font-weight: 700;
-        
+
     }
 }

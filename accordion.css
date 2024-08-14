@@ -1,0 +1,79 @@
+
+
+.accordion-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.accordion {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header span{
+    font-size: 3em;
+    color: rgb(107, 107, 107);
+    font-weight: 500;
+    line-height: 65px;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.accordion-header:hover {
+    background-color: #f9f9f9;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 15px;
+    background-color: #fff;
+}
+
+.accordion-content p {
+    margin: 10px 0;
+}
+
+.accordion-content.open {
+    padding: 5px 15px;
+}
+
+.accordion-header .icon-accordion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+.line {
+    stroke: #000;
+    stroke-width: 2;
+    transition: transform 0.4s ease;
+}
+
+.icon-accordion.open .vertical {
+    transform: rotate(90deg);
+    opacity: 0;
+    transition: transform 0.4s ease;
+}
