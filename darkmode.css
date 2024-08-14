@@ -210,6 +210,18 @@ body.dark-mode .accordion-content.open{
     text-decoration: none !important;
     
 }
+body.dark-mode .icon-grid{
+    background: #121212 !important;  
+    color: white !important;
+    text-decoration: none !important;
+    
+}
+body.dark-mode .icon-s{
+    background: #333 !important;  
+    color: white !important;
+    text-decoration: none !important;
+    
+}
 
 
 /* body.dark-mode section{
