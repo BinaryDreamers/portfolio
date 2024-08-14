@@ -49,11 +49,13 @@
 }
 
 .accordion-content p {
+    font-size: 16px;
     margin: 10px 0;
 }
 
 .accordion-content.open {
     padding: 5px 15px;
+    
 }
 
 .accordion-header .icon-accordion {
@@ -67,7 +69,7 @@
 }
 
 .line {
-    stroke: #000;
+    stroke: #890082;
     stroke-width: 2;
     transition: transform 0.4s ease;
 }

@@ -502,6 +502,15 @@ text-fill-color: transparent;
     .send-email-logo{
         display: none;
     }
+
+    .section-four {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .overview-container {
+        flex: 1 1 calc(50% - 10px);
+    }
          
 }
 
@@ -623,9 +632,6 @@ text-fill-color: transparent;
         flex-direction: column;
         padding: 20px 0;
         /* background-image: linear-gradient(to right top, #161616, #121212, #0d0d0d, #070707, #000000); */
-        border-width: 1px;
-        border-style: solid;
-        border-right: none;
     }
 
     /* .div-first-title{
@@ -645,9 +651,6 @@ text-fill-color: transparent;
         font-weight: 400;
         padding: 0 20px;
     }
-
-
-
 
 
     .div-first-text span{
