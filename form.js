@@ -23,6 +23,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     errorMessage.style.display = "block";
     isValid = false;
   }
+
   if (!lastname) {
     document.getElementById("lastnameError").textContent =
       "Lastname is required.";
@@ -51,6 +52,10 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     isValid = false;
   }
   if (isValid) {
+    document.getElementById("firstnameError").textContent = "";
+    errorMessage.style.display = "none";
+    document.getElementById("lastnameError").textContent = "";
+    lastErrorMessage.style.display = "none";
     const form = document.getElementById("myForm");
     const subject = document.getElementById("form-subject");
     subject.value = `New Submission Binary Dreamers, ${
