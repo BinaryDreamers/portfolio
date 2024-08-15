@@ -180,16 +180,16 @@ body.dark-mode .memberCard{
 
 body.dark-mode .aboutUsBox p{
     color: white !important;
-    transition: all 0.3s ease; 
+    transition: all 0.5s ease; 
 }
 body.dark-mode .aboutUs-li{
     color: white !important;
     text-decoration: none !important;
-    transition: all 0.3s ease; 
+    transition: all 0.5s ease; 
 }
 body.dark-mode .aboutUsBox .footer-wave-path-aboutUs{
     fill: #ffffff;
-    transition: all 0.3s ease; 
+    transition: all 0.5s ease; 
 }
 
 body.dark-mode .accordion-header{
@@ -228,3 +228,25 @@ body.dark-mode .icon-s{
     background: #333 !important;
     color: white !important;
 } */
+
+
+body.dark-mode input:-webkit-autofill {
+    background-color: #121212 !important; /* Change the background color */
+    -webkit-box-shadow: 0 0 0px 1000px #121212 inset !important; /* Fix for some browsers */
+    -webkit-text-fill-color: #ffffff !important; /* Change the text color */
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition */
+}
+
+body.dark-mode input:-moz-autofill {
+    background-color: #121212 !important; /* Change the background color */
+    -webkit-text-fill-color: #ffffff !important; /* Change the text color */
+    /* border: 1px solid #999 !important; Optional: Change border color */
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition */
+}
+
+body.dark-mode input:-ms-autofill {
+    background-color: #121212 !important; /* Change the background color */
+    -webkit-text-fill-color: #ffffff !important; /* Change the text color */
+    /* border: 1px solid #999 !important; Optional: Change border color */
+    transition: background-color 0.5, color 0.5s; /* Smooth transition */
+}

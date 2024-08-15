@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.getElementById("mode");
-
+  darkmode();
   // Check if dark mode preference is stored in localStorage
   if (localStorage.getItem("dark-mode") === "enabled") {
     document.body.classList.add("dark-mode");
-    darkmode();
   } else {
     lightmode();
   }
