@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="darkmode.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="accordion.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,6 +36,8 @@
     />
   </head>
   <body>
+    <div id="notification" class="notification hidden">
+  </div>
     <div class="menu">
       <div class="close-div">close</div>
 
@@ -308,88 +311,165 @@
             </div>
 
             <div class="div-first">
-              <div>
-                <p class="div-first-title">Team Overview</p>
-                <li>
-                  <h2>Collaboration:</h2>
-                  <p>
-                    We believe that the best solutions come from working
-                    together and leveraging diverse perspectives and expertise.
-                  </p>
-                </li>
-                <li>
-                  <h2>Excellence:</h2>
-                  <p>
-                    We hold ourselves to the highest standards of quality and
-                    professionalism in everything we do.
-                  </p>
-                </li>
-                <li>
-                  <h2>Integrity:</h2>
-                  <p>
-                    We operate with honesty and transparency, building trust
-                    with our clients and within our team.
-                  </p>
-                </li>
-                <li>
-                  <h2>Growth:</h2>
-                  <p>
-                    We are dedicated to lifelong learning and development,
-                    encouraging each team member to grow both personally and
-                    professionally.
-                  </p>
-                </li>
-                <li>
-                  <h2>Innovation:</h2>
-                  <p>
-                    We are committed to exploring new ideas and technologies,
-                    continually pushing the limits of what is possible.
-                  </p>
-                </li>
+              <div class="accordion-container">
+                <div class="accordion">
+                    <div class="accordion-header" data-index="0">
+                        <span>Collaboration</span>
+                        <div class="icon-accordion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path class="line horizontal" d="M1 8h14" />
+                                <path class="line vertical" d="M8 1v14" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We believe that the best solutions come from working together and leveraging diverse perspectives and expertise.</p>
+                    </div>
+                </div>
+        
+                <div class="accordion">
+                    <div class="accordion-header" data-index="1">
+                        <span>Excellence</span>
+                        <div class="icon-accordion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path class="line horizontal" d="M1 8h14" />
+                                <path class="line vertical" d="M8 1v14" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We hold ourselves to the highest standards of quality and professionalism in everything we do.</p>
+                    </div>
+                </div>
+        
+                <div class="accordion">
+                    <div class="accordion-header" data-index="2">
+                        <span>Integrity</span>
+                        <div class="icon-accordion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path class="line horizontal" d="M1 8h14" />
+                                <path class="line vertical" d="M8 1v14" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We operate with honesty and transparency, building trust with our clients and within our team.</p>
+                    </div>
+                </div>
+        
+                <div class="accordion">
+                    <div class="accordion-header" data-index="3">
+                        <span>Growth</span>
+                        <div class="icon-accordion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path class="line horizontal" d="M1 8h14" />
+                                <path class="line vertical" d="M8 1v14" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We are dedicated to lifelong learning and development, encouraging each team member to grow both personally and professionally.</p>
+                    </div>
+                </div>
+        
+                <div class="accordion">
+                    <div class="accordion-header" data-index="4">
+                        <span>Innovation</span>
+                        <div class="icon-accordion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path class="line horizontal" d="M1 8h14" />
+                                <path class="line vertical" d="M8 1v14" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We are committed to exploring new ideas and technologies, continually pushing the limits of what is possible.</p>
+                    </div>
+                </div>
               </div>
             </div>
+              
           </div>
 
           <div class="overview-container">
             <div class="div-first div-first2">
-              <div>
-                <p class="div-first-title">Team Overview</p>
-                <li>
-                  <h2>Award-Winning Projects:</h2>
-                  <p>
-                    Our team has been recognized for excellence in software
-                    development with awards from industry-leading organizations.
-                  </p>
-                </li>
-                <li>
-                  <h2>Excellence:</h2>
-                  <p>
-                    We hold ourselves to the highest standards of quality and
-                    professionalism in everything we do.
-                  </p>
-                </li>
-                <li>
-                  <h2>Integrity:</h2>
-                  <p>
-                    We operate with honesty and transparency, building trust
-                    with our clients and within our team.
-                  </p>
-                </li>
-                <li>
-                  <h2>Growth:</h2>
-                  <p>
-                    We are dedicated to lifelong learning and development,
-                    encouraging each team member to grow both personally and
-                    professionally.
-                  </p>
-                </li>
-                <li>
-                  <h2>Innovation:</h2>
-                  <p>
-                    We are committed to exploring new ideas and technologies,
-                    continually pushing the limits of what is possible.
-                  </p>
-                </li>
+              <div class="accordion-container">                
+                <div class="accordion">
+                    <div class="accordion-header" data-index="0">
+                        <span>CodeMasters 2024 Champions</span>
+                        <div class="icon-accordion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path class="line horizontal" d="M1 8h14" />
+                                <path class="line vertical" d="M8 1v14" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Binary Dreamers claimed victory at the prestigious CodeMasters 2024 competition, outperforming hundreds of teams with our innovative algorithm solutions and teamwork. Our dedication and expertise in tackling complex problems earned us the top spot and widespread recognition in the tech community.</p>
+                    </div>
+                </div>
+        
+                <div class="accordion">
+                    <div class="accordion-header" data-index="1">
+                        <span>Launch of the "Dreamer’s Website"</span>
+                        <div class="icon-accordion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path class="line horizontal" d="M1 8h14" />
+                                <path class="line vertical" d="M8 1v14" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We successfully developed and launched the "Dreamer’s App," an innovative platform designed to connect students with mentors worldwide. The app, which received accolades for its user-friendly interface and functionality, has helped thousands of students gain valuable insights and support.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="accordion">
+                    <div class="accordion-header" data-index="2">
+                        <span>Hackathon Success</span>
+                        <div class="icon-accordion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path class="line horizontal" d="M1 8h14" />
+                                <path class="line vertical" d="M8 1v14" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Binary Dreamers triumphed at the 2024 National Hackathon, securing the first place award with our groundbreaking project, "Eco-Coder," which promotes sustainable coding practices. Our project was praised for its creativity and potential to positively impact the environment.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="accordion">
+                    <div class="accordion-header" data-index="3">
+                        <span>AI Innovation Award</span>
+                        <div class="icon-accordion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path class="line horizontal" d="M1 8h14" />
+                                <path class="line vertical" d="M8 1v14" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We were honored with the AI Innovation Award at the annual Tech Summit for our project "SmartHomeAI," which enhances home automation systems using cutting-edge artificial intelligence. This recognition highlights our team's commitment to pushing the boundaries of technology and improving everyday life.</p>
+                    </div>
+                </div>
+        
+                <div class="accordion">
+                    <div class="accordion-header" data-index="4">
+                        <span>Community Impact Program</span>
+                        <div class="icon-accordion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path class="line horizontal" d="M1 8h14" />
+                                <path class="line vertical" d="M8 1v14" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Binary Dreamers launched a successful community impact program, "Code for Change," teaching coding skills to underprivileged youth. This initiative empowered participants by providing essential digital literacy and programming knowledge, making a significant difference in their lives and future opportunities</p>
+                    </div>
+                </div>
               </div>
             </div>
 
@@ -452,10 +532,22 @@
               <img class="reddit" src="assets/svg/reddit.svg" alt="" />
             </div>
             <p class="text-social">
-              CLICK<br /><br />ME<br /><br />FOR<br /><br />SOCIAL
+              HOVER<br /><br />FOR<br /><br />SOCIAL<br /><br>
             </p>
             <div class="main_back"></div>
           </div>
+
+          <div class="icon-grid">
+            <div class="icon-s"><img src="assets/svg/codepen.svg" alt="Twitter"></div>
+            <div class="icon-s"><img src="assets/svg/discord.svg" alt="Twitter"></div>
+            <div class="icon-s"><img src="assets/svg/dribble.svg" alt="Twitter"></div>
+            <div class="icon-s"><img src="assets/svg/github.svg" alt="Instagram"></div>
+            <div class="icon-s"><img src="assets/svg/instagram.svg" alt="Dribbble"></div>
+            <div class="icon-s"><img src="assets/svg/linkedin-members.svg" alt="CodePen"></div>
+            <div class="icon-s"><img src="assets/svg/reddit.svg" alt="UI"></div>
+            <div class="icon-s"><img src="assets/svg/telegram.svg" alt="Discord"></div>
+            <div class="icon-s"><img src="assets/svg/twitter.svg" alt="GitHub"></div>
+        </div>
 
           <div class="social-text">
             <p>Connect with us on social media</p>
@@ -484,12 +576,14 @@
                   <div class="underline"></div>
                   <label for="firstname">First Name</label>
                   <span class="error" id="firstnameError"></span>
+                  <div class="error-message" id="nameError">Numbers are not allowed.</div> 
                 </div>
                 <div class="input-data form-group">
                   <input type="text" id="lastname" name="lastname" />
                   <div class="underline"></div>
                   <label for="lastname">Last Name</label>
                   <span class="error" id="lastnameError"></span>
+                  <div class="error-message" id="lastError">Numbers are not allowed.</div>
                 </div>
               </div>
               <div class="form-row">
@@ -786,6 +880,7 @@
     <script src="assets/CDN/typed.js"></script>
     <script src="confetti.js"></script>
     <script src="mode.js"></script>
+    <script src="accordion.js"></script>
     <script>
       var typed = new Typed(".auto-type", {
         strings: ["Dream", "Code", "Achieve", "Innovate", "Create", "Inspire"],

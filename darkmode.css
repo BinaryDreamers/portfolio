@@ -180,19 +180,48 @@ body.dark-mode .memberCard{
 
 body.dark-mode .aboutUsBox p{
     color: white !important;
-    transition: all 0.5s ease; 
+    transition: all 0.3s ease; 
 }
 body.dark-mode .aboutUs-li{
     color: white !important;
     text-decoration: none !important;
-    transition: all 0.5s ease; 
+    transition: all 0.3s ease; 
 }
 body.dark-mode .aboutUsBox .footer-wave-path-aboutUs{
     fill: #ffffff;
-    transition: all 0.5s ease; 
+    transition: all 0.3s ease; 
 }
 
-
+body.dark-mode .accordion-header{
+    background: #121212 !important;  
+    color: white !important;
+    text-decoration: none !important;
+    
+}
+body.dark-mode .accordion-container{
+    background: #121212 !important;  
+    color: white !important;
+    text-decoration: none !important;
+    
+}
+body.dark-mode .accordion-content.open{
+    background: #121212 !important;  
+    color: white !important;
+    text-decoration: none !important;
+    
+}
+body.dark-mode .icon-grid{
+    background: #121212 !important;  
+    color: white !important;
+    text-decoration: none !important;
+    
+}
+body.dark-mode .icon-s{
+    background: #333 !important;  
+    color: white !important;
+    text-decoration: none !important;
+    
+}
 
 
 /* body.dark-mode section{

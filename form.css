@@ -53,12 +53,27 @@ form .form-row .textarea{
   color: rgb(0, 0, 0);
   
 }
-.input-data input:focus ~ label, .textarea textarea:focus ~ label,
-.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+.input-data input[type="text"]:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input[type="text"]:valid ~ label, .textarea textarea:valid ~ label{
   transform: translateY(-20px);
   font-size: 14px;
   color: #a700e9;
 }
+
+.input-data input[type="email"]:focus ~ label ,
+.input-data input[type="email"]:invalid ~ label { 
+  transform: translateY(-20px); 
+  font-size: 14px;
+  color: #a700e9;
+}
+.input-data input[type="email"]:focus ~ label ,
+.input-data input[type="email"]:valid ~ label { 
+  transform: translateY(-20px); 
+  font-size: 14px;
+  color: #a700e9;
+}
+
+ 
 .textarea textarea{
   resize: none;
   padding-top: 10px;
@@ -114,7 +129,8 @@ form .form-row .textarea{
 
 .error {
   color: red;
-  font-size: 0.875em;
+  font-size: 0.7em;
+  line-height: 10px;
 }
 
 
@@ -192,6 +208,21 @@ form .form-row .textarea{
   transition: all 0.3s ease;
 }
 
+#nameError {
+  color: #ff0000;
+  font-size: 0.7em;
+  display: none;
+  margin-top: 5px;
+  line-height: 10px;
+}
+#lastError {
+  color: #ff0000;
+  font-size: 0.7em;
+  display: none;
+  margin-top: 5px;
+  line-height: 10px
+}
+
 @media (max-width: 768px) {
 
     .send-email{
@@ -220,7 +251,7 @@ form .form-row .textarea{
 @media (max-width: 1010px) {
   .error {
     color: red;
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: 500;
   }
 }

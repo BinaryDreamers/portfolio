@@ -10,17 +10,28 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   const lastname = document.querySelector("#lastname").value.trim();
   const email = document.querySelector("#email").value.trim();
   const message = document.querySelector("#message").value.trim();
-
-
+  const errorMessage = document.getElementById("nameError");
+  const lastErrorMessage = document.getElementById("lastError");
+  const lettersOnly = /^[A-Za-z]*$/;
   if (!firstname) {
     document.getElementById("firstnameError").textContent =
       "Firstname is required.";
+    isValid = false;
+    errorMessage.style.display = "none";
+  }
+  if (!firstname.match(lettersOnly)) {
+    errorMessage.style.display = "block";
     isValid = false;
   }
 
   if (!lastname) {
     document.getElementById("lastnameError").textContent =
       "Lastname is required.";
+    lastErrorMessage.style.display = "none";
+    isValid = false;
+  }
+  if (!lastname.match(lettersOnly)) {
+    lastErrorMessage.style.display = "block";
     isValid = false;
   }
 
@@ -28,7 +39,10 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     document.getElementById("emailError").textContent = "Email is required.";
     isValid = false;
   } else if (!/\S+@\S+\.\S+/.test(email)) {
+    email.value = email.value.replace(/[^A-Za-z]/g, "");
     document.getElementById("emailError").textContent = "Email is invalid.";
+    emailError.style.display = "block";
+    event.preventDefault();
     isValid = false;
   }
 
@@ -37,19 +51,22 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
       "Message is required.";
     isValid = false;
   }
-  if(isValid){
-    const form = document.getElementById("myForm")
-    const subject = document.getElementById("form-subject")
-    subject.value = `New Submission Binary Dreamers, ${document.getElementById("firstname").value} ${document.getElementById("lastname").value}`
-    const formData = new FormData(form)
-    const url = 'https://api.web3forms.com/submit'
-    fetch(
-      url,
-      {
-        method: 'POST',
-        body: formData
-      }
-    )
+  if (isValid) {
+    document.getElementById("firstnameError").textContent = "";
+    errorMessage.style.display = "none";
+    document.getElementById("lastnameError").textContent = "";
+    lastErrorMessage.style.display = "none";
+    const form = document.getElementById("myForm");
+    const subject = document.getElementById("form-subject");
+    subject.value = `New Submission Binary Dreamers, ${
+      document.getElementById("firstname").value
+    } ${document.getElementById("lastname").value}`;
+    const formData = new FormData(form);
+    const url = "https://api.web3forms.com/submit";
+    fetch(url, {
+      method: "POST",
+      body: formData,
+    });
   }
   if (isValid) {
     setTimeout(() => {
@@ -91,7 +108,6 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
           requestAnimationFrame(frame);
         }
       })();
-
     }, 1000);
   }
 
