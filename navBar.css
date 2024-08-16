@@ -201,7 +201,7 @@ input:checked~.toggle{
     }
 
     .container{
-        width: 80%;
+        width: 90%;
         justify-content: space-between;
     }
 
