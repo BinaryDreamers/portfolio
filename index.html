@@ -894,54 +894,7 @@
         loop: true,
       });
 
-      let content2 = gsap.utils.toArray("#content2");
-        gsap.to(content2, {
-          x: -800,
-          scrollTrigger: {
-            trigger: "#content2",
-            start: "top 80%",
-            end: "bottom 60%",
-            scrub: true,
-          
-          },
-      });
 
-      let content1 = gsap.utils.toArray("#content1");
-      gsap.to(content1, {
-           x: 800,
-        scrollTrigger: {
-          trigger: "#content1",
-          start: "top 80%",
-          end: "bottom 60%",
-          scrub: true,
-          
-        },
-      });
-
-
-      let content3 = gsap.utils.toArray("#content3");
-      gsap.to(content3, {
-           x: 800,
-        scrollTrigger: {
-          trigger: "#content3",
-          start: "top 80%",
-          end: "bottom 60%",
-          scrub: true,
-          
-        },
-      });
-
-      let content4 = gsap.utils.toArray("#content4");
-      gsap.to(content4, {
-           x: -800,
-        scrollTrigger: {
-          trigger: "#content4",
-          start: "top 80%",
-          end: "bottom 60%",
-          scrub: true,
-          
-        },
-      });
       
       let tl = gsap.timeline({
       scrollTrigger: {
@@ -956,6 +909,8 @@
     y: -200,
     duration: 1,
   });
+      
+      
  
     </script>
   </body>
