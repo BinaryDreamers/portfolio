@@ -29,6 +29,16 @@ body.dark-mode .showcase{
     border-color: #3c3c3c;
     transition: all 0.5s ease; 
 }
+body.dark-mode{
+    background: #3c3c3c !important;
+    border-color: #3c3c3c;
+    transition: all 0.5s ease; 
+}
+body.dark-mode main{
+    background: #121212 !important;
+    border-color: #3c3c3c;
+    transition: all 0.5s ease; 
+}
 body.dark-mode .stick{
     background: #3c3c3c !important;
     color: white !important;  

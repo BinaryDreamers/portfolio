@@ -49,12 +49,12 @@
       </ul>
     </div>
 
-    <div id="loader" class="loader">
+    <!-- <div id="loader" class="loader">
       <video id="timedVideo" autoplay muted>
         <source src="assets/video/Simple-Dot-[remix].mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-    </div>
+    </div> -->
 
     <nav class="nav-bar">
       <div class="container">
@@ -225,10 +225,10 @@
 
         <section id="targetInfo" class="section-four">
           <div class="overview-container">
-            <div class="overview">
+            <div class="overview" id="content1">
               <a href="aboutUs.html">
-                <div class="card-overview">
-                  <div class="content">
+                <div class="card-overview" >
+                  <div class="content" >
                     <p class="para">Our Mission</p>
 
                     <div>
@@ -274,10 +274,10 @@
               </div>
             </div>
 
-            <div class="overview">
+            <div class="overview" id="content2">
               <a href="aboutUs.html">
-                <div class="card-overview">
-                  <div class="content">
+                <div class="card-overview" >
+                  <div class="content" >
                     <p class="para">Our Vision</p>
 
                     <div>
@@ -293,10 +293,10 @@
           </div>
 
           <div class="overview-container">
-            <div class="overview">
+            <div class="overview"  id="content3">
               <a href="aboutUs.html">
                 <div class="card-overview">
-                  <div class="content">
+                  <div class="content" >
                     <p class="para">Our Core Values</p>
 
                     <div>
@@ -473,9 +473,9 @@
               </div>
             </div>
 
-            <div class="overview">
+            <div class="overview" id="content4">
               <a href="aboutUs.html">
-                <div class="card-overview">
+                <div class="card-overview" >
                   <div class="content">
                     <p class="para">Our Achievements</p>
 
@@ -869,7 +869,10 @@
       </main>
     </section>
 
+    <script src="main.js"></script>
     <script src="lenismin.js"></script>
+    <script src="gsapmin.js"></script>
+    <script src="ScrollTriggermin.js"></script>
     <script src="lenis.js"></script>
     <script src="hiddenNavBar.js"></script>
     <script src="navBar.js"></script>
@@ -890,6 +893,70 @@
         backSpeed: 150,
         loop: true,
       });
+
+      let content2 = gsap.utils.toArray("#content2");
+        gsap.to(content2, {
+          x: -800,
+          scrollTrigger: {
+            trigger: "#content2",
+            start: "top 80%",
+            end: "bottom 60%",
+            scrub: true,
+            markers: true,
+          },
+      });
+
+      let content1 = gsap.utils.toArray("#content1");
+      gsap.to(content1, {
+           x: 800,
+        scrollTrigger: {
+          trigger: "#content1",
+          start: "top 80%",
+          end: "bottom 60%",
+          scrub: true,
+          markers: true,
+        },
+      });
+
+
+      let content3 = gsap.utils.toArray("#content3");
+      gsap.to(content3, {
+           x: 800,
+        scrollTrigger: {
+          trigger: "#content3",
+          start: "top 80%",
+          end: "bottom 60%",
+          scrub: true,
+          markers: true,
+        },
+      });
+
+      let content4 = gsap.utils.toArray("#content4");
+      gsap.to(content4, {
+           x: -800,
+        scrollTrigger: {
+          trigger: "#content4",
+          start: "top 80%",
+          end: "bottom 60%",
+          scrub: true,
+          markers: true,
+        },
+      });
+      
+      let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".section-two",
+        start: "0 bottom",
+        end: "10% top",
+        scrub: true,
+        // markers: true,
+      },
+    });
+  tl.to(".section-two", {
+    y: -200,
+    duration: 1,
+  });
+ 
     </script>
   </body>
 </html>
