@@ -286,7 +286,7 @@ text-fill-color: transparent;
 
 .section-five{
     position: relative;
-    z-index: 100000000000;
+    z-index: 10000;
     background-color: rgb(217, 217, 217);
 }
     
