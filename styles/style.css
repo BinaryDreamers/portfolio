@@ -40,7 +40,7 @@ body {
 }
 
 .shape{
-    display: none;
+    
     height: 100%;
     width: 50%;
     background-color: #0057b300;
@@ -598,6 +598,9 @@ text-fill-color: transparent;
 
 /* devices with a viewport width of 769 pixels or more */
 @media(min-width: 769px) {
+    .shape{
+        display: none;
+    }
     .title .main-title{
         font-size: 3.2em; 
     }
