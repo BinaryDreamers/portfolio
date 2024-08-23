@@ -25,11 +25,11 @@ body {
     align-items: center;
     color: white;
     text-align: center;
-    background-color: white;
+    background-color:  linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 
 .hero-content{
-    background-color: rgba(0, 0, 0, 0);
+    background-color:  linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -39,10 +39,8 @@ body {
 }
 
 .shape{
-    
     height: 100%;
     width: 50%;
-    background-color: #0057b300;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     overflow: hidden;
     border: none;
@@ -589,17 +587,36 @@ text-fill-color: transparent;
 }
 
 
-@media(max-width: 1025){
+@media(max-width: 1025px){
     .title .main-title{
         font-size: 3.1em;
     }
+    .shape{
+        width: 100%;
+        clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+        background-color: #0057b300;
+        border: none;
+    }
+    .title{
+        position: absolute;
+        width: 90%;
+    }
+
+    .hero-content{
+        flex-direction: column;
+    }
+
+    .hero-video {
+        width: 100%;
+        object-fit: cover; 
+        filter: brightness(50%);
+    }
+
 }
 
 /* devices with a viewport width of 769 pixels or more */
 @media(min-width: 769px) {
-    .shape{
-        display: none;
-    }
+
     .title .main-title{
         font-size: 3.2em; 
     }
@@ -789,29 +806,34 @@ text-fill-color: transparent;
 
 #landingTitleDiv{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     height: 100vh;
     width: 100%; 
     color: white;
 }
 
+
+
+
 #landingTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
     font-size: 20vh;
     font-weight: 700;
     color: white;
     padding: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 
 @media(min-width: 1024px){
 
     #heroContainerOne{
-        text-align: center;
-        align-items: center;
-        justify-content: center;
         width: 100%;
         display: flex;
         background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
@@ -835,5 +857,8 @@ text-fill-color: transparent;
         color: white;
         font-weight: 700;
 
+    }
+    .shape{
+        display: none;
     }
 }
