@@ -4,6 +4,8 @@ color: #fff;
 text-decoration: none;
 }
 .pg-footer {
+    position: relative;
+    z-index: 1000000000;
     width: 100%;
 }
 

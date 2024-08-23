@@ -6,34 +6,23 @@
     <title>Binary Dreamers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="navBarHidden.css"
-    />
-    <link rel="stylesheet" type="text/css" media="screen" href="navBar.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="buttons.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="cards.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="social.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="load.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="darkmode.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="accordion.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/navBarHidden.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/navBar.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/buttons.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/cards.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/social.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/load.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/form.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/footer.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/darkmode.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/accordion.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"/>
   </head>
   <body>
     <div id="notification" class="notification hidden">
@@ -49,12 +38,12 @@
       </ul>
     </div>
 
-    <div id="loader" class="loader">
+    <!-- <div id="loader" class="loader">
       <video id="timedVideo" autoplay muted>
         <source src="assets/video/Simple-Dot-[remix].mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-    </div>
+    </div> -->
 
     <nav class="nav-bar">
       <div class="container">
@@ -102,13 +91,26 @@
         </button>
       </div>
 
+      <div id="heroContainerOne" class="hero-container">
+        
+        <div class="hero-content" >
+          <div class="title" id="landingTitleDiv">
+                <h2 id="landingTitle"><br>WELCOME<br> <br>to<br> <br>BINARY DREAMERS<br> </h2>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="heroContainerOne" class="hero-container">
+        
+       
+      </div> -->
       <div class="hero-container">
+        
         <div class="hero-content">
-          <div class="shape">
+          <!-- <div class="shape">
             <video class="hero-video" autoplay muted loop>
               <source src="assets/video/landvid.mp4" type="video/mp4" />
             </video>
-          </div>
+          </div> -->
           <div class="title">
             <span class="main-title">
               <h1><span class="auto-type"></span></h1>
@@ -869,23 +871,25 @@
       </main>
     </section>
 
-    <script src="main.js"></script>
-    <script src="lenismin.js"></script>
-    <script src="gsapmin.js"></script>
-    <script src="ScrollTriggermin.js"></script>
-    <script src="lenis.js"></script>
-    <script src="hiddenNavBar.js"></script>
-    <script src="navBar.js"></script>
-    <script src="counter.js"></script>
-    <script src="load.js"></script>
-    <script src="scroll.js"></script>
-    <script src="form.js"></script>
-    <script src="scrollReveal.js"></script>
-    <script src="scrollReavealEffect.js"></script>
-    <script src="assets/CDN/typed.js"></script>
-    <script src="confetti.js"></script>
-    <script src="mode.js"></script>
-    <script src="accordion.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lenismin.js"></script>
+    <script src="js/gsapmin.js"></script>
+    <script src="js/ScrollTriggermin.js"></script>
+    <script src="js/lenis.js"></script>
+    <!-- <script src="js/splitType.js"></script> -->
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="js/hiddenNavBar.js"></script>
+    <script src="js/navBar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/scrollReveal.js"></script>
+    <script src="js/scrollReavealEffect.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/confetti.js"></script>
+    <script src="js/mode.js"></script>
+    <script src="js/accordion.js"></script>
     <script>
       var typed = new Typed(".auto-type", {
         strings: ["Dream", "Code", "Achieve", "Innovate", "Create", "Inspire"],
@@ -894,22 +898,40 @@
         loop: true,
       });
 
+      const myText = new SplitType("#landingTitle");
 
-      
-  //     let tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".section-two",
-  //       start: "0 bottom",
-  //       end: "10% top",
-  //       scrub: true,
-  //       // markers: true,
-  //     },
-  //   });
-  // tl.to(".section-two", {
-  //   y: -200,
-  //   duration: 1,
-  // });
-      
+      gsap.to(".char", {
+        y: 0,
+        stagger: 0.05,
+        delay: 0.2,
+        duration: 0.1,
+      });
+
+
+            let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".section-two",
+          start: "0 bottom",
+          end: "10% top",
+          scrub: true,
+        },
+      });
+      tl.to(".section-two", {
+        y: -200,
+        duration: 1,
+      });
+
+
+      gsap.to("#landingTitleDiv h2", {
+    scale: 300, stagger: 0.25, duration: 10,
+    scrollTrigger: {
+        trigger: "#landingTitleDiv",
+        pin: true,
+        end: `+=${innerHeight * 1.3}`,
+        scrub: 3
+    }
+});
+
       
  
     </script>

@@ -91,7 +91,20 @@
         </button>
       </div>
 
+      <div id="heroContainerOne" class="hero-container">
+        
+        <div class="hero-content" >
+          <div class="title" id="landingTitleDiv">
+                <h2 id="landingTitle"><br>WELCOME<br> <br>to<br> <br>BINARY DREAMERS<br> </h2>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="heroContainerOne" class="hero-container">
+        
+       
+      </div> -->
       <div class="hero-container">
+        
         <div class="hero-content">
           <div class="shape">
             <video class="hero-video" autoplay muted loop>
@@ -863,6 +876,8 @@
     <script src="js/gsapmin.js"></script>
     <script src="js/ScrollTriggermin.js"></script>
     <script src="js/lenis.js"></script>
+    <!-- <script src="js/splitType.js"></script> -->
+    <script src="https://unpkg.com/split-type"></script>
     <script src="js/hiddenNavBar.js"></script>
     <script src="js/navBar.js"></script>
     <script src="js/counter.js"></script>
@@ -871,7 +886,7 @@
     <script src="js/form.js"></script>
     <script src="js/scrollReveal.js"></script>
     <script src="js/scrollReavealEffect.js"></script>
-    <script src="js/assets/CDN/typed.js"></script>
+    <script src="js/typed.js"></script>
     <script src="js/confetti.js"></script>
     <script src="js/mode.js"></script>
     <script src="js/accordion.js"></script>
@@ -883,21 +898,40 @@
         loop: true,
       });
 
+      const myText = new SplitType("#landingTitle");
 
-      
-      let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".section-two",
-        start: "0 bottom",
-        end: "10% top",
-        scrub: true,
-      },
-    });
-    tl.to(".section-two", {
-        y: -500,
-        duration: 1,
-    });
-      
+      gsap.to(".char", {
+        y: 0,
+        stagger: 0.05,
+        delay: 0.2,
+        duration: 0.1,
+      });
+
+
+      //       let tl = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: ".section-two",
+      //     start: "0 bottom",
+      //     end: "10% top",
+      //     scrub: true,
+      //   },
+      // });
+      // tl.to(".section-two", {
+      //   y: -200,
+      //   duration: 1,
+      // });
+
+
+      gsap.to("#landingTitleDiv h2", {
+    scale: 300, stagger: 0.25, duration: 10,
+    scrollTrigger: {
+        trigger: "#landingTitleDiv",
+        pin: true,
+        end: `+=${innerHeight * 1.3}`,
+        scrub: 3
+    }
+});
+
       
  
     </script>

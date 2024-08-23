@@ -24,6 +24,19 @@ body.dark-mode .popup {
     background: #333 !important;
 } */
 
+body.dark-mode #landingTitle{
+   
+    color: #121212 !important;
+    transition: all 0.5s ease; 
+}
+
+body.dark-mode  .text_button    {
+   
+    color: white !important;
+    transition: all 0.5s ease; 
+}
+
+
 body.dark-mode .showcase{
     background: #3c3c3c !important;
     border-color: #3c3c3c;
