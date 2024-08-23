@@ -29,6 +29,11 @@ body.dark-mode #landingTitle{
     color: #121212 !important;
     transition: all 0.5s ease; 
 }
+body.dark-mode .hero-container {
+   
+    background-color: #121212 !important;
+    transition: all 0.5s ease; 
+}
 
 body.dark-mode  .text_button    {
    
