@@ -1,7 +1,8 @@
-html{
-    overflow: hidden;
-    scroll-behavior: initial;
+body::-webkit-scrollbar, .scrollable-element::-webkit-scrollbar {
+    width: 0px; /* Hide scrollbar width (for Chrome, Safari, Edge) */
+    height: 0px; /* Hide scrollbar height (for Chrome, Safari, Edge) */
 }
+
 body {
     position: relative;
     margin: 0;
