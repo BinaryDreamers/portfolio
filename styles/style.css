@@ -1,4 +1,7 @@
-
+html{
+    overflow: hidden;
+    scroll-behavior: initial;
+}
 body {
     position: relative;
     margin: 0;
@@ -8,7 +11,6 @@ body {
     color: #333;
     line-height: 1.6;
     background-color: #333;
-    scroll-behavior: smooth;
     transition: all 0.5s ease;
 }
 

@@ -23,17 +23,21 @@ header
 {
   position: relative;
   width: 60px;
-  height: 60px;
-  background: url(assets/svg/iconamoon--menu-burger-horizontal.svg);
+  height: 40px;
+  background: url(iconamoon--menu-burger-horizontal.svg);
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
   cursor: pointer;
+  /* border: 0.5px solid #fff; */
+  padding: 0 20px  ;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
 }
 
 .toggle.active
 {
-  background: url(assets/svg/ic--round-close.svg);
+  background: url(ic--round-close.svg);
   background-repeat: no-repeat;
   background-size: 35px;
   background-position: center;
