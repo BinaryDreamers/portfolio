@@ -387,6 +387,9 @@ text-fill-color: transparent;
 
 
 @media(max-width: 600px) {
+    .title{
+        width: 100%;
+    }
     .title .main-title{
         
         font-size: 3em;
@@ -470,7 +473,7 @@ text-fill-color: transparent;
     }
     .title{
         position: absolute;
-        width: 90%;
+        width: 100%;
     }
 
     .hero-content{
@@ -599,7 +602,7 @@ text-fill-color: transparent;
     }
     .title{
         position: absolute;
-        width: 90%;
+        width: 100%;
     }
 
     .hero-content{
