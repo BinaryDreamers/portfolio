@@ -116,9 +116,8 @@
     background-color: #007bff5e;
     color: rgb(0, 0, 0);
     padding: 5px 10px;
-    border-radius: 30px;
     font-size: 0.9em;
-    border: 0.5px solid #ff00d0;
+    border: 0.5px solid #007bff;
 }
 
 .popup-contentProject {
