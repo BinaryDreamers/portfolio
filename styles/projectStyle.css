@@ -92,6 +92,95 @@
     }
    }
 
+   #mainContainer .project-card img{
+    cursor: pointer;
+   }
+
+.popupProject {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}
+#popup-dateProject{
+    font-size: 14px;
+    padding: 5px 0;
+}
+#popup-tagProject{
+    background-color: #007bff5e;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 0.9em;
+    border: 0.5px solid #ff00d0;
+}
+
+.popup-contentProject {
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.ds{
+    width: 40%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.close-btnProject {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#popup-videoProject {
+    width: 800px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#popup-titleProject {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+
+#popup-descriptionProject{
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.gitBtn{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #181717;
+    transition: all 0.3s ease;
+}
+
+.gitBtn:hover{
+    background-color: #000000;
+}
+
 .project-card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

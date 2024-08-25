@@ -1,5 +1,6 @@
 const contentData = [
   {
+    id: 1,
     imageUrl: "assets/images/SWIFT-image.png",
     title: "SWIFT-SALES",
     description:
@@ -8,8 +9,10 @@ const contentData = [
     date: "2024-08-07",
     buttonLabel: "See More",
     link: "https://github.com/theblackethiopiandude/SWIFT-SALES",
+    videoSrc: "assets/video/landvid.mp4",
   },
   {
+    id: 2,
     imageUrl: "assets/images/GMS-image.png",
     title: "Garage Management System (GMS)",
     description:
@@ -18,8 +21,10 @@ const contentData = [
     date: "2024-08-08",
     buttonLabel: "See More",
     link: "https://github.com/theblackethiopiandude/GMS",
+    videoSrc: "assets/videos/Sender.mp4",
   },
   {
+    id: 3,
     imageUrl: "assets/images/Minesweeper-Image.png",
     title: "Habeshan Minesweeper",
     description:
@@ -28,8 +33,10 @@ const contentData = [
     date: "2024-08-09",
     buttonLabel: "See More",
     link: "https://github.com/theblackethiopiandude/Minesweeper",
+    videoSrc: "assets/videos/Sender.mp4",
   },
   {
+    id: 4,
     imageUrl: "assets/images/Sender.png",
     title: "እስክንድር",
     description:
@@ -38,6 +45,7 @@ const contentData = [
     date: "2024-08-09",
     buttonLabel: "See More",
     link: "",
+    videoSrc: "assets/videos/Sender.mp4",
   },
 ];
 
@@ -48,10 +56,13 @@ function createProjectCards() {
 
   contentData.forEach((data, index) => {
     const card = document.createElement("div");
-    card.classList.add("project-card");
+    card.className = "project-card";
+    card.setAttribute("data-info", data.id);
+
+    // card.classList.add("project-card");
 
     card.innerHTML = `
-            <img src="${data.imageUrl}" alt="Project Image">
+            <img class='img' src="${data.imageUrl}" alt="Project Image">
             <h2 class="card-title">${data.title}</h2>
             <div class="card-content">
                 <div class="card-description" id="desc-${index}">${data.description}</div>
@@ -67,7 +78,10 @@ function createProjectCards() {
                 </a>
             </div>
         `;
-
+    const img = card.querySelector(".img");
+    img.addEventListener("click", () => {
+      showPopup(data);
+    });
     mainContainer.appendChild(card);
   });
 
@@ -88,3 +102,34 @@ function createProjectCards() {
 }
 
 createProjectCards();
+
+const popup = document.getElementById("popupProject");
+const closeBtn = document.querySelector(".close-btnProject");
+const popupTitle = document.getElementById("popup-titleProject");
+const popupDescription = document.getElementById("popup-descriptionProject");
+const popupDate = document.getElementById("popup-dateProject");
+const popupTag = document.getElementById("popup-tagProject");
+const popupVideo = document.getElementById("popup-videoProject");
+const popupGitBtn = document.getElementById("gitBtn");
+
+function showPopup(data) {
+  popupTitle.textContent = data.title + " Details";
+  popupDescription.textContent = data.description;
+  popupDate.textContent = data.date;
+  popupTag.textContent = data.tag;
+  popupGitBtn.href = data.link;
+  popupVideo.querySelector("source").setAttribute("src", data.videoSrc);
+  popupVideo.load();
+
+  popup.style.display = "flex";
+}
+
+closeBtn.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === popup) {
+    popup.style.display = "none";
+  }
+});
