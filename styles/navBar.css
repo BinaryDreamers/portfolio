@@ -5,8 +5,10 @@
     height: 80px; 
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     z-index: 100000;
     transition:  .5s;
 }
@@ -19,9 +21,12 @@
 .stick{
     z-index: 100000;
     width: 100%;
-    height: 60px;
+    height: 44px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85em;
     position: fixed;
     left: 0;
     right: 0;
@@ -32,28 +37,41 @@
 }
 
 .container{
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content:center;
 }
 
+
+.stick .container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 90%;
+}
 .logo{
+    width: 390px;
     padding: 5px;
-    margin: 5px;
+    margin-left: 55px;
     font-family: Montserrat;
     font-size: 1.4em;
     font-weight: 700;
     color: white;
-  max-width: 200px;;
+     max-width: 400px;;
+    
 }
 
 .logo-small{
     line-height: 30px;
-    font-size: 1.3em;
-    width: 190px;
+    font-size: 1.2em;
+    width: 390px;
     color: rgb(0, 0, 0);
+    margin-left: 55px;
+
 }
+
+
 
 .sub{
     font-size: 12px;
@@ -62,7 +80,6 @@
 }
 
 .nav-links{
-    width: 920px;
     height: 50px;
     border-radius: 50px;
     backdrop-filter: blur(10px);
@@ -70,33 +87,47 @@
     border: 1px rgba(0, 0, 0, 0) solid;
     display: flex;
     align-items: center;
+    justify-content: end;
     transition: all 0.5s ease; 
 }
 
 
 .small-nav-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
     border: none;
     height: 30px;
     color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    
 }
 
 .nav-links .links{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+    /* width: 100%; */
+    justify-content: end;
+    align-items: center;
+
    
 }
 
 .links li{
     list-style: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
+    margin: 0 15px;
 }
 
 .links li a{
     text-decoration: none;
     font-family: montserrat;
-    font-size: 1em;
+    font-size: 0.85em;
+}
+
+.toggle-mode{
+    background-color: #ffffff;
 }
 
 .mode{
@@ -160,14 +191,13 @@ input:checked~.moon{
     display: block;
     width: 40px;
     height: 40px;
-    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     cursor: pointer;
    
 }
 
 input:checked~.toggle{
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
 }
 
 
@@ -191,6 +221,12 @@ input:checked~.toggle{
 
 
 @media(max-width: 768px) {
+    .logo{
+        margin: 0;
+    }
+    .logo-small{
+        margin: 0;
+    }
     .nav-links{
         display: none;
     }
@@ -201,8 +237,9 @@ input:checked~.toggle{
     }
 
     .container{
+        align-items: center;
+       justify-content: center;
         width: 90%;
-        justify-content: space-between;
     }
 
     .burger-menu{

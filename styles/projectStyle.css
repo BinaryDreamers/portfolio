@@ -122,6 +122,7 @@
 
 .popup-contentProject {
     background-color: #fff;
+    border: 1px solid #898989;
     padding: 20px;
     width: 90%;
     display: flex;
@@ -139,15 +140,23 @@
 }
 
 .close-btnProject {
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: 5px;
-    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    right: 0px;
     font-size: 30px;
     cursor: pointer;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 7px;
+    background-color: #898989;
 }
 
 #popup-videoProject {
-    width: 800px;
+    width: 60%;
     margin-top: 20px;
     border-radius: 10px;
 }
@@ -194,7 +203,6 @@
     flex-direction: column;
     border-top-left-radius: 17px;
     border-top-right-radius: 17px;
-    
     overflow: hidden;
     background-color: #000000;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -343,6 +351,23 @@
 
     .project-card .card-title {
         line-height: 40px;
+    }
+    .popup-contentProject {
+        overflow-y: scroll;
+        flex-direction: column;
+    }
+
+    .ds{
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    #popup-videoProject {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 10px;
     }
 }
 

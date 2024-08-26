@@ -69,11 +69,7 @@ body.dark-mode .menu{
     border-color: #3c3c3c; 
     transition: all 0.5s ease; 
 }
-body.dark-mode .toggle-mode{
-    background: #3c3c3c !important;  
-    border-color: #3c3c3c;
-    transition: all 0.5s ease;  
-}
+
 
 body.dark-mode .section-two{
     background: #121212 !important;
@@ -96,7 +92,7 @@ body.dark-mode .section-three{
 
 body.dark-mode .section-four{
     background: #121212 !important;
-    color: white !important
+    color: white !important;
     transition: all 0.5s ease; 
 }
 body.dark-mode .div-first-text{
@@ -161,6 +157,11 @@ body.dark-mode .footer-wave-path{
     transition: all 0.5s ease;   
 }
 /* ----------------------------------------------- */
+body.dark-mode  .popup-contentProject{
+    background-color: #121212 !important;
+    color: white !important;
+
+}
 body.dark-mode .project-hero{
     background-image: linear-gradient(-225deg, #147b8b 0%, #115789 48%, #403e75 100%);
 }
@@ -197,6 +198,28 @@ body.dark-mode #memberCardContainer{
 }
 body.dark-mode .memberCard{
     background: #333 !important; 
+    color: white !important;
+    transition: all 0.5s ease; 
+}
+
+
+body.dark-mode .dsMembers{
+    background-color: #121212 !important;
+    color: white !important;
+    transition: all 0.5s ease; 
+}
+body.dark-mode #dsDescriptionPara{
+   
+    color: white !important;
+    transition: all 0.5s ease; 
+}
+body.dark-mode #dsNamePara{
+    
+    color: white !important;
+    transition: all 0.5s ease; 
+}
+body.dark-mode #dsRolePara{
+    
     color: white !important;
     transition: all 0.5s ease; 
 }
