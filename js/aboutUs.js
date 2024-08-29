@@ -22,7 +22,4 @@ window.addEventListener("load", () => {
 
     observer.observe(path.parentElement);
   });
-  // script.js
-
-  // Make circles follow the cursor
 });

@@ -273,9 +273,6 @@ color: #fff;
 }
 
 
-
-
-
 @media (min-width: 760px) {
 .footer-content {
     margin-left: auto;
@@ -294,7 +291,5 @@ color: #fff;
 }
 }
 @media (min-width: 568px) {
-/* .footer-content-column {
-    width: 49.99%;
-} */
+
 }

@@ -18,8 +18,6 @@ body.loaded #loader {
     opacity: 0;
     visibility: hidden;    
 }
-
-
   
 #timedVideo {
     width: 100%; 

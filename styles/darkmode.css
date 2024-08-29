@@ -2,36 +2,26 @@ body{
     transition: background-color 0.5s, color 0.5s;
 }
 
-
-/* body.dark-mode {
-    background-color: #121212 !important;
-    color: white !important;
-}
-
-body.dark-mode h1 {
-    color: rgb(250, 250, 250) !important;
-}
-
-body.dark-mode p {
-    color: rgb(255, 255, 255) !important;
-}
-
-body.dark-mode a {
-    color: rgb(255, 255, 255) !important;
-}
-
-body.dark-mode .popup {
-    background: #333 !important;
-} */
-
 body.dark-mode #landingTitle{
-   
     color: #121212 !important;
     transition: all 0.5s ease; 
+}
+body.dark-mode .cursor-dot{
+    background-color: rgb(255, 255, 255);
+
+}
+body.dark-mode .cursor-outline{
+    border: 2px solid hsla(0, 0%, 100%, 0.9);
+    
 }
 
 
 body.dark-mode  .text_button    {
+   
+    color: white !important;
+    transition: all 0.5s ease; 
+}
+body.dark-mode  .stick .links li a{
    
     color: white !important;
     transition: all 0.5s ease; 
@@ -269,13 +259,6 @@ body.dark-mode .icon-s{
     text-decoration: none !important;
     
 }
-
-
-/* body.dark-mode section{
-    background: #333 !important;
-    color: white !important;
-} */
-
 
 body.dark-mode input:-webkit-autofill {
     background-color: #121212 !important; /* Change the background color */

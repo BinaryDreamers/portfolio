@@ -731,13 +731,6 @@ text-fill-color: transparent;
         /* background-image: linear-gradient(to right top, #161616, #121212, #0d0d0d, #070707, #000000); */
     }
 
-    /* .div-first-title{
-        font-size: 2em;
-        color: white;
-        font-weight: 200;
-        padding-left: 20px;
-    } */
-
     .div-first-title{
         display: none;
     }

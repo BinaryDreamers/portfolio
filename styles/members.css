@@ -277,7 +277,7 @@
     right: 0;
     font-size: 30px;
     cursor: pointer;
-    background-color: #ddd;
+    background-color: #ff2f2f;
     border-bottom-left-radius: 50%;
 }
 
@@ -366,6 +366,14 @@
 @media (max-width: 900px) {
     #memberCardContainer {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dsMembersDescription{
+        width: 80%;
+        color: rgb(17, 17, 17);
+        margin-bottom: 10px;
+        /* border: rgb(55, 0, 255) 1px solid; */
+        text-align: center;
     }
 }
 
