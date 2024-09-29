@@ -1,0 +1,157 @@
+
+
+  .table-container {
+    
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+  }
+  
+  #team-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 10px 10px;
+    text-align: left;
+  }
+  th{
+    border-left: 0.5px solid rgb(200, 208, 255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    margin: 5px;
+  }
+  
+  thead {
+    background-color: #4caf4f00;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+
+  
+  tbody tr:nth-child(even) {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  }
+  
+  tbody tr:hover {
+    background-color: #e9f5e9;
+  }
+  
+  td img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  td .name-wrapper {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  td .username {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  td .fullname {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  table{
+    border: 1px solid #ddd;
+  }
+  
+ 
+.profile{
+    cursor: pointer;
+}
+.profile.first .rank {
+    
+    background-color: gold;
+}
+
+.profile.second .rank {
+    background-color: silver;
+}
+
+.profile.third .rank {
+    background-color: #CD7F32;
+}
+.profile.other .rank {
+    background-color: transparent;
+}
+
+.rank{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.rankTh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: none
+}
+
+.progresTags{
+    margin:auto 0; 
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+.progresTags div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;;
+}
+
+.progresTags div p{
+    padding: 0 20px;
+    font-size: 0.8em;
+} 
+.easyTag{
+    background-color: rgb(0, 228, 133, 0.329);
+    border:0.5px solid rgb(0, 228, 133);
+    margin-right: 10px;
+}
+.mediumTag{
+    background-color: rgb(251, 255, 0,0.329);
+    border:0.5px solid rgb(251, 255, 0,);
+    margin-right: 10px;
+}
+.hardTag{
+    background-color: rgba(255, 51, 0, 0.329);
+    border: 0.5px solid rgba(255, 51, 0);
+}
+
+
+@media (max-width: 768px) {
+  .progress,
+  .acceptedSubmission,
+  .roleInTeam,
+  .dateAdded,
+  .tds{
+    display: none;
+  }
+}

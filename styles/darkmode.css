@@ -280,3 +280,35 @@ body.dark-mode input:-ms-autofill {
     /* border: 1px solid #999 !important; Optional: Change border color */
     transition: background-color 0.5, color 0.5s; /* Smooth transition */
 }
+
+
+body.dark-mode   #team-table {
+    background-color: #3c3c3c;
+    color: fff;
+    transition: background-color 0.5s, color 0.5s;
+     
+}
+
+body.dark-mode  tbody tr:hover {
+    background-color: #424242;
+}
+
+body.dark-mode th{
+    color: #fff;
+}
+body.dark-mode td{
+    color: #fff;
+}
+
+body.dark-mode td .username{
+    color: #fff;
+}
+  
+body.dark-mode td .fullname{
+    color: #eeeeee;
+}
+
+body.dark-mode table{
+    border: 1px solid #f7fff6;
+  }
+  

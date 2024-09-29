@@ -1,0 +1,69 @@
+/* General Skeleton Loader Styles */
+.skeleton {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    animation: skeleton-loading 1.2s infinite ease-in-out;
+  }
+  
+  @keyframes skeleton-loading {
+    0% {
+      background-color: #e0e0e0;
+    }
+    50% {
+      background-color: #f0f0f0;
+    }
+    100% {
+      background-color: #e0e0e0;
+    }
+  }
+  
+  /* Skeleton styles for table rows */
+  .skeleton-row td {
+    
+    padding: 10px;
+  }
+  
+  .skeleton-cell {
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 4px;
+  }
+  
+  .skeleton-cell.small {
+        padding: 20px;
+  }
+  
+  .skeleton-cell.medium {
+    padding: 20px;
+
+  }
+  
+  .skeleton-cell.large {
+    padding: 20px;
+
+  }
+  
+  .profile-skeleton {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-skeleton .profile-img-skeleton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #ddd;
+  }
+  
+  .profile-skeleton .name-skeleton {
+    width: 120px;
+    height: 20px;
+    background-color: #ddd;
+  }
+  
+
+  /* -------------------------ProfileSkeltonLoaderCss------------------------------ */
+
+
+ 

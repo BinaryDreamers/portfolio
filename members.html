@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/members.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/footer.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/darkmode.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesProfile.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="skelotonLoader.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -86,43 +88,7 @@
         </div>     
     </nav>
 
-    <div id="popupMembers" class="popupMembers">
-      <div class="popup-contentMembers">
-          <span class="close-btnMembers">&times;</span>
-          
-          <div class="bannerMembers">
-            <img id="popupBanner" class="popupBanner" src="" alt="">
-          </div>
 
-          <div id="profileImage" class="profileImage">
-             <img id="proImage" src="" alt="">
-          </div>
-
-          <div class="dsMembers">
-              <div class="dsName">
-                <p id="dsNamePara">
-                </p>
-              </div>
-              <div class="dsRole"> 
-                <p id="dsRolePara">  
-                </p>
-              </div>
-
-              <div class="dsMembersDescription">
-                <div class="dsDescription">
-                  <p id="dsDescriptionPara">
-                  </p>
-                </div>
-            </div>
-
-            <div class="memberSocial">
-              <a id="telegramSocial" href="" target="_blank"><span class="memberIcon"><img src="assets/svg/telegram-members.svg" alt="telegram"></span></a>
-              <a id="linkedInSocial" href="" target="_blank"><span class="memberIcon"><img src="assets/svg/linkedin-members.svg" alt="linkedin"></span></a>
-              <a id="githubSocial" href="" target="_blank"><span class="memberIcon"><img src="assets/svg/github-members.svg" alt="github"></span></a>
-          </div>
-          </div>
-      </div>
-    </div>
 
     <section class="showcase">
       <div class="backToTop">
@@ -146,7 +112,7 @@
             </p>
 
             <button
-              data-target="#memberCardContainer"
+              data-target="#table-container"
               class="member-explore-btn scrollButton">
               Let's Meet the Members ╰(*°▽°*)╯ ◢
             </button>
@@ -154,9 +120,28 @@
         </div>
       </section>
 
-      <section id="memberCardContainer" id="mainContainer-member">
-        
-      </section>
+     
+        <div id="table-container" class="table-container" >
+          <table id="team-table">
+            <thead>
+              <tr>
+                <th class="rankTh">Rank</th>
+                <th class="profile">Profile</th>
+                <th class="progress">Progress</th>
+                <th class="acceptedSubmission">Accepted Submission</th>
+                <th class="roleInTeam">Role in Team</th>
+                <th class="dateAdded">Date Added</th>
+              </tr>
+            </thead>
+            <tbody id="tbody" class="tbody">
+              
+            </tbody>
+            <tbody id="skeleton-loader">
+            </tbody>
+            
+          </table>
+        </div>
+     
 
       <div class="pg-footer">
         <footer class="footer">
@@ -388,6 +373,8 @@
         </footer>
       </div>
     </section>
+    <script type="module" src="scriptsProfile.js"></script>
+    <script type="module" src="membersProfile.js"></script>
     <script src="js/lenismin.js"></script>
     <script src="js/lenis.js"></script>
     <script src="js/hiddenNavBar.js"></script>
