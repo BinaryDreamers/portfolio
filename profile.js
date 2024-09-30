@@ -225,7 +225,7 @@ async function displayUserProfile(member) {
       languageCell.classList.add("time");
       languageCell.classList.add("hide");
       const timeCell = document.createElement("td");
-      timeCell.textContent = submission.timestamp;
+      timeCell.textContent = timeAgo(submission.timestamp);
       timeCell.classList.add("time");
       timeCell.classList.add("hide");
 
@@ -258,3 +258,32 @@ if (user_id) {
 }
 
 // window.history.pushState({}, "profile", "profile");
+
+function timeAgo(timestamp) {
+  const now = Date.now();
+  const secondsPast = Math.floor((now - timestamp * 1000) / 1000);
+
+  if (secondsPast < 60) {
+    return secondsPast <= 30
+      ? "a few second ago"
+      : `${secondsPast} seconds ago`;
+  }
+  if (secondsPast < 3600) {
+    const minutesPast = Math.floor(secondsPast / 60);
+    return minutesPast === 1 ? "a minute ago" : `${minutesPast} minutes ago`;
+  }
+  if (secondsPast < 86400) {
+    const hoursPast = Math.floor(secondsPast / 3600);
+    return hoursPast === 1 ? "an hour ago" : `${hoursPast} hours ago`;
+  }
+  if (secondsPast < 604800) {
+    const daysPast = Math.floor(secondsPast / 86400);
+    return daysPast === 1 ? "a day ago" : `${daysPast} days ago`;
+  }
+  if (secondsPast < 2592000) {
+    const weeksPast = Math.floor(secondsPast / 604800);
+    return weeksPast === 1 ? "a week ago" : `${weeksPast} weeks ago`;
+  }
+  const monthsPast = Math.floor(secondsPast / 2592000);
+  return monthsPast === 1 ? "a month ago" : `${monthsPast} months ago`;
+}
