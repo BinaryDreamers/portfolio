@@ -165,17 +165,17 @@ body{
 }
 
 .easyDiv{
-  color: #1CBAC0;
+  color: #1cbaba;
   font-weight: 500;
 }
 
 .mediumDiv{
-  color: #FEBA00;
+  color: #ffb700;
   font-weight: 500;
 }
 
 .hardDiv{
-  color: #F63737;
+  color: #f63737;
   font-weight: 500;
 }
 
@@ -221,23 +221,28 @@ body{
 }
 
 .status-accepted {
-  background-color: rgb(0, 228, 133, 0.329);
-  border:0.5px solid rgb(0, 228, 133);
-  padding: 5px;
+  display: inline-block;
+  color: #1CBAC0;
+  background-color:  #1cbaba63;
+  border:0.5px none #23e6e6;
+  padding: 0 3px;
   border-radius: 5px;
 }
 
-.status-in-progress {
-  background-color: rgb(251, 255, 0,0.329);
-  border:0.5px solid rgb(251, 255, 0,);
-  padding: 5px;
-  border-radius: 5px;
-}
+/* .status-in-progress {
+  display: inline-block;
+  color: #ffb700;
+  border:0.5px solid #ffb700ec;
+  padding: 3px;
+  border-radius: 55px;
+} */
 
 .status-rejected {
-  background-color: rgba(255, 51, 0, 0.329);
-  border: 0.5px solid rgba(255, 51, 0);
-  padding: 5px;
+  display: inline-block;
+  color: #F63737;
+  background-color: #f6373775;
+  border: 0.5px none #ff1919;
+  padding: 0 3px;
   border-radius: 5px;
 }
 

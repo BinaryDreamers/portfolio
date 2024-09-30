@@ -216,6 +216,7 @@ async function displayUserProfile(member) {
     const submissions = await fetchSubmissions(user_id);
     submissions.forEach((submission) => {
       const row = document.createElement("tr");
+      const stat = document.createElement("div");
 
       // Title Cell
       const titleCell = document.createElement("td");
@@ -223,8 +224,9 @@ async function displayUserProfile(member) {
 
       // Time Cell
       const statusCell = document.createElement("td");
-      statusCell.textContent = submission.statusDisplay;
-      statusCell.classList.add(getStatusClass(submission.statusDisplay));
+      stat.textContent = submission.statusDisplay;
+      stat.classList.add(getStatusClass(submission.statusDisplay));
+      statusCell.appendChild(stat);
       statusCell.classList.add("time");
       status.classList.add("hide");
       const languageCell = document.createElement("td");
