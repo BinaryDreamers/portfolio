@@ -17,7 +17,7 @@ function hideSkeletonLoaderProfile() {
   document.getElementById("container").classList.add("hidden");
 }
 
-const url = "http://localhost:5109";
+const url = "https://glacial-fortress-83834-37d6fcfdc937.herokuapp.com";
 async function fetchSubmissions(user_id) {
   try {
     const response = await fetch(`${url}/api/submissions/${user_id}`);

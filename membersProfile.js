@@ -29,7 +29,9 @@ export async function getQuestionCache() {
   const cache = JSON.parse(localStorage.getItem("questions_cache"));
   if (cache) return cache;
   try {
-    const data = await fetch(`http://localhost:5109/api/questions`);
+    const data = await fetch(
+      `https://glacial-fortress-83834-37d6fcfdc937.herokuapp.com/api/questions`
+    );
     const questions = await data.json();
     localStorage.setItem("questions_cache", JSON.stringify(questions));
   } catch (error) {
