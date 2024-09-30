@@ -2,7 +2,10 @@ import {
   getMembersCache,
   getMembersInfoCache,
   cacheMembersInfo,
+  cacheMembers,
   getQuestionCache,
+  getSubmissionsCache,
+  cacheSubmissionsInfo,
 } from "./membersProfile.js";
 
 function showSkeletonLoaderProfile() {
@@ -17,9 +20,11 @@ function hideSkeletonLoaderProfile() {
   document.getElementById("container").classList.add("hidden");
 }
 
-const url = "http://localhost:5109";
+const url = "https://glacial-fortress-83834-37d6fcfdc937.herokuapp.com";
 async function fetchSubmissions(user_id) {
   try {
+    const submissions = getSubmissionsCache(user_id);
+    if (submissions) return submissions;
     const response = await fetch(`${url}/api/submissions/${user_id}`);
 
     if (!response.ok) {
@@ -27,6 +32,7 @@ async function fetchSubmissions(user_id) {
     }
     const data = await response.json();
     console.log("API Data:", data);
+    cacheSubmissionsInfo(user_id, data.submissions);
     return data.submissions;
   } catch (error) {
     console.error("Error fetching the data:", error);
@@ -48,12 +54,20 @@ async function fetchUserData(user_id) {
       window.onload = function () {
         hideSkeletonLoaderProfile();
       };
+      let members = getMembersCache();
+      if (members.length === 0) {
+        members = (await (await fetch(`${url}/api/members`)).json()).members;
+        cacheMembers(members);
+        console.log("Request sent to merge member data");
+      }
+
       const member = {
         ...data,
-        ...getMembersCache().find((member) => member.id === user_id),
+        ...members.find((member) => member.id === user_id),
       };
 
       if (member) {
+        cacheMembersInfo(user_id, member);
         hideSkeletonLoaderProfile();
         displayUserProfile(member);
       } else {
@@ -66,12 +80,24 @@ async function fetchUserData(user_id) {
       hideSkeletonLoaderProfile();
     }
   } else {
+    let memberInfo = getMembersInfoCache(user_id);
+    let members = getMembersCache();
+    if (members.length === 0) {
+      members = (await (await fetch(`${url}/api/members`)).json()).members;
+      cacheMembers(members);
+    }
+    if (Object.keys(memberInfo).length === 0) {
+      members = (await (await fetch(`${url}/api/members/${user_id}`)).json())
+        .members;
+    }
+
     const member = {
-      ...getMembersInfoCache(user_id),
-      ...getMembersCache().find((member) => member.id === user_id),
+      ...memberInfo,
+      ...members.find((member) => member.id === user_id),
     };
 
     if (member) {
+      cacheMembersInfo(user_id, member);
       hideSkeletonLoaderProfile();
       displayUserProfile(member);
     } else {
@@ -82,8 +108,6 @@ async function fetchUserData(user_id) {
 }
 
 async function displayUserProfile(member) {
-  console.log(Object.keys(member));
-
   const main_container = document.getElementById("main_container");
   main_container.innerHTML = `
       <section class="sectionOne">
@@ -208,7 +232,7 @@ async function displayUserProfile(member) {
       languageCell.classList.add("time");
       languageCell.classList.add("hide");
       const timeCell = document.createElement("td");
-      timeCell.textContent = submission.timestamp;
+      timeCell.textContent = timeAgo(submission.timestamp);
       timeCell.classList.add("time");
       timeCell.classList.add("hide");
 
@@ -235,10 +259,38 @@ const user_id = urlParams.get("id");
 // Fetch and display the member data
 if (user_id) {
   fetchUserData(user_id);
-  fetchSubmissions(user_id);
 } else {
   hideSkeletonLoaderProfile();
   displayError("No id provided");
 }
 
 // window.history.pushState({}, "profile", "profile");
+
+function timeAgo(timestamp) {
+  const now = Date.now();
+  const secondsPast = Math.floor((now - timestamp * 1000) / 1000);
+
+  if (secondsPast < 60) {
+    return secondsPast <= 30
+      ? "a few second ago"
+      : `${secondsPast} seconds ago`;
+  }
+  if (secondsPast < 3600) {
+    const minutesPast = Math.floor(secondsPast / 60);
+    return minutesPast === 1 ? "a minute ago" : `${minutesPast} minutes ago`;
+  }
+  if (secondsPast < 86400) {
+    const hoursPast = Math.floor(secondsPast / 3600);
+    return hoursPast === 1 ? "an hour ago" : `${hoursPast} hours ago`;
+  }
+  if (secondsPast < 604800) {
+    const daysPast = Math.floor(secondsPast / 86400);
+    return daysPast === 1 ? "a day ago" : `${daysPast} days ago`;
+  }
+  if (secondsPast < 2592000) {
+    const weeksPast = Math.floor(secondsPast / 604800);
+    return weeksPast === 1 ? "a week ago" : `${weeksPast} weeks ago`;
+  }
+  const monthsPast = Math.floor(secondsPast / 2592000);
+  return monthsPast === 1 ? "a month ago" : `${monthsPast} months ago`;
+}

@@ -3,9 +3,9 @@ const lenis = new Lenis({
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
 });
 
-lenis.on("scroll", (e) => {
-  console.log(e);
-});
+// lenis.on("scroll", (e) => {
+//   console.log(e);
+// });
 
 function raf(time) {
   lenis.raf(time);

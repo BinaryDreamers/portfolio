@@ -1,5 +1,5 @@
 // window.history.pushState({}, "members", "members");
-const url = "http://localhost:5109";
+const url = "https://glacial-fortress-83834-37d6fcfdc937.herokuapp.com";
 
 import { cacheMembers, getMembersCache } from "./membersProfile.js";
 
@@ -47,7 +47,7 @@ async function fetchUserData() {
       if (!response.ok) {
         throw new Error("Failed to fetch user data");
       }
-      console.log("REQUEST SENT");
+      console.log("REQUEST SENT FOR MEMBERS");
       const data = await response.json();
       cacheMembers(data.members);
       hideSkeletonLoader();
