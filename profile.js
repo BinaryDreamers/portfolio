@@ -182,6 +182,12 @@ async function displayUserProfile(member) {
 
   submissionList.appendChild(header);
 
+  function getStatusClass(status) {
+    if (status === "Accepted") return "status-accepted";
+    // else if (status === "Time Limit Exceeded") return "status-in-progress";
+    else return "status-rejected";
+  }
+
   async function fetchSubmit() {
     const submissions = await fetchSubmissions(user_id);
     submissions.forEach((submission) => {
@@ -194,6 +200,7 @@ async function displayUserProfile(member) {
       // Time Cell
       const statusCell = document.createElement("td");
       statusCell.textContent = submission.statusDisplay;
+      statusCell.classList.add(getStatusClass(submission.statusDisplay));
       statusCell.classList.add("time");
       status.classList.add("hide");
       const languageCell = document.createElement("td");
