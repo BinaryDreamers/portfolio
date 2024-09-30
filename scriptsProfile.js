@@ -47,7 +47,7 @@ async function fetchUserData() {
       if (!response.ok) {
         throw new Error("Failed to fetch user data");
       }
-      console.log("REQUEST SENT");
+      console.log("REQUEST SENT FOR MEMBERS");
       const data = await response.json();
       cacheMembers(data.members);
       hideSkeletonLoader();
