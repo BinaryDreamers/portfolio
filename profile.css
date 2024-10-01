@@ -221,12 +221,19 @@ body{
 }
 
 .status-accepted {
-  display: inline-block;
+  /* display: inline-block;
   color: #1CBAC0;
   background-color:  #1cbaba63;
   border:0.5px none #23e6e6;
   padding: 0 3px;
-  border-radius: 5px;
+  border-radius: 5px; */
+  display: inline-block;
+
+  background-color: rgb(0, 228, 133, 0.329);
+    border:0.5px solid rgb(0, 228, 133);
+    border-radius: 55px;
+    padding: 0 5px;
+    /* margin-right: 10px; */
 }
 
 /* .status-in-progress {
@@ -238,12 +245,16 @@ body{
 } */
 
 .status-rejected {
-  display: inline-block;
+  /* display: inline-block;
   color: #F63737;
   background-color: #f6373775;
   border: 0.5px none #ff1919;
-  padding: 0 3px;
-  border-radius: 5px;
+  padding: 0 3px; */
+  padding: 0 5px;
+  border-radius: 55px;
+  display: inline-block;
+  background-color: rgba(255, 51, 0, 0.329);
+    border: 0.5px solid rgba(255, 51, 0);
 }
 
 
