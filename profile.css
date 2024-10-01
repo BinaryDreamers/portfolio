@@ -1,24 +1,24 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
-  background-color: #F7F8FA;
+body {
+  background-color: #f7f8fa;
   font-family: poppins;
 }
-.main_container{
+.main_container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items:center ;
+  align-items: center;
   justify-content: center;
   /* border: 1px red solid; */
   max-width: 1200px;
   width: 100%;
 }
 
-.sectionOne{
+.sectionOne {
   position: relative;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: white;
@@ -30,17 +30,17 @@ body{
   /* border: 1px solid blue; */
 }
 
-.banner{
+.banner {
   background-color: white;
   display: flex;
   width: 100%;
   object-fit: cover;
 }
-.banner .bannerImage{
+.banner .bannerImage {
   width: 100%;
 }
 
-.profileDiv{
+.profileDiv {
   position: absolute;
   width: 150px;
   height: 150px;
@@ -51,13 +51,13 @@ body{
   border-radius: 50%;
 }
 
-.profileDiv .profileImage{
+.profileDiv .profileImage {
   border: 3px solid white;
   border-radius: 50%;
-    width: 100%;
+  width: 100%;
 }
 
-.sectionTwo{
+.sectionTwo {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: white;
   border-radius: 10px;
@@ -69,67 +69,62 @@ body{
   margin-top: 50px;
 }
 
-.infoprofile{
+.infoprofile {
   display: flex;
   flex-direction: row;
   width: 100%;
   /* border: 1px solid red; */
 }
 
-
-
-.infoProfilePictureInfo{
+.infoProfilePictureInfo {
   width: 50%;
   margin-left: 45px;
   display: flex;
   align-items: start;
   flex-direction: column;
-  justify-content: center;;
+  justify-content: center;
   padding: 5px;
 }
 
-
-
-.infoProfilePictureInfo p{
+.infoProfilePictureInfo p {
   font-size: 0.8em;
-  font-style: italic ;
+  font-style: italic;
 }
 
-.description{
+.description {
   padding: 20px;
   display: flex;
   width: 50%;
   align-items: center;
   justify-content: end;
   font-size: 0.8em;
-  background-color: #F7F8FA;
+  background-color: #f7f8fa;
 }
 
-.infoSocial{
+.infoSocial {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding-top: 20px ;
-  padding-bottom: 20px ;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
   border-top: rgb(189, 194, 243) 1px solid;
 }
 
-.infoSocial a{
+.infoSocial a {
   text-decoration: none;
-  margin: 0 10px ;
+  margin: 0 10px;
   width: 25px;
   height: 25px;
   margin: 0 50px;
 }
 
-.infoSocial a image{
+.infoSocial a image {
   width: 100%;
 }
 
-
-.sectionThree{
+.sectionThree {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
   background-color: white;
@@ -143,15 +138,14 @@ body{
   text-align: center;
 }
 
-
-.questionStatus{
+.questionStatus {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
-.questionStatus .divs{
+.questionStatus .divs {
   width: 250px;
   height: 100px;
   border-radius: 10px;
@@ -160,50 +154,49 @@ body{
   /* border: 1px solid blue; */
   align-items: center;
   justify-content: center;
-  background-color: #FAFAFA;
-  
+  background-color: #fafafa;
 }
 
-.easyDiv{
+.easyDiv {
   color: #1cbaba;
   font-weight: 500;
 }
 
-.mediumDiv{
+.mediumDiv {
   color: #ffb700;
   font-weight: 500;
 }
 
-.hardDiv{
+.hardDiv {
   color: #f63737;
   font-weight: 500;
 }
 
-.status{
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-   color: black;
-   font-weight: normal;
+.status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: normal;
 }
 
-.status div{
+.status div {
   padding: 5px;
   color: black;
 }
 
-.totalQuestDiv{
+.totalQuestDiv {
   padding: 20px;
   font-size: 1.2em;
 }
 
-.totalQuestDiv span{
+.totalQuestDiv span {
   font-weight: 500;
   font-size: 1.5em;
 }
 
-.sectionFour{
+.sectionFour {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
   background-color: white;
@@ -215,18 +208,18 @@ body{
   margin-top: 10px;
 }
 
-.accepted{
+.accepted {
   margin-left: 20px;
   padding-top: 10px;
 }
 
 .status-accepted {
   display: inline-block;
-  color: #1CBAC0;
-  background-color:  #1cbaba63;
-  border:0.5px none #23e6e6;
-  padding: 0 3px;
-  border-radius: 5px;
+  color: #fff;
+  background-color: #2cbb5d;
+  border: 0.5px none #23e6e6;
+  padding: 0 15px;
+  border-radius: 15px;
 }
 
 /* .status-in-progress {
@@ -239,21 +232,25 @@ body{
 
 .status-rejected {
   display: inline-block;
-  color: #F63737;
-  background-color: #f6373775;
+  color: #fff;
+  background-color: #ef4743;
   border: 0.5px none #ff1919;
-  padding: 0 3px;
-  border-radius: 5px;
+  padding: 0 5px;
+  border-radius: 10px;
 }
 
-
+@media screen and (max-width: 1085px) {
+  .status-rejected {
+    font-size: 10.5px;
+  }
+}
 
 @media (max-width: 768px) {
   .questionStatus {
     width: 100%;
     grid-template-columns: 1fr;
   }
-  .questionStatus .divs{
+  .questionStatus .divs {
     width: 100%;
     height: 100px;
     border-radius: 10px;
@@ -262,25 +259,24 @@ body{
     /* border: 1px solid blue; */
     align-items: center;
     justify-content: center;
-    background-color: #FAFAFA;
-    
+    background-color: #fafafa;
   }
 
-  .infoprofile{
+  .infoprofile {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .infoProfilePictureInfo{
+  .infoProfilePictureInfo {
     width: auto;
   }
 
-  .description{
+  .description {
     width: auto;
   }
 
-  .profileDiv{
+  .profileDiv {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -290,12 +286,13 @@ body{
     transform: translate(-50%, -50%);
     border-radius: 50%;
   }
-  
+  .status-rejected {
+    font-size: 9.5px;
+  }
 }
 
-
 @media (max-width: 480px) {
-  .profileDiv{
+  .profileDiv {
     position: absolute;
     width: 80px;
     height: 80px;
@@ -304,5 +301,8 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+  }
+  .status-rejected {
+    font-size: 8.5px;
   }
 }
