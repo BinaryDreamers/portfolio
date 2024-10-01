@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>User Profile</title>
-  <link rel="stylesheet" href="profile.css">
-  <link rel="stylesheet" href="questionTable.css">
-  <link rel="stylesheet" href="skeletonLoaderProfile.css">
-</head>
-<body>
-
-      <div class="container" id="container">
-        <div id="profile-skeleton" class="skeleton-profile">
-          <div class="skeleton-banner">
-            <div class="skeleton-avatar"></div>
-          </div>
-          
-          <div class="skeleton-details">
-            <div class="skeleton-text name"></div>
-            <div class="skeleton-text role"></div>
-            <div class="skeleton-text description"></div>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="questionTable.css" />
+    <link rel="stylesheet" href="skeletonLoaderProfile.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div id="profile-skeleton" class="skeleton-profile">
+        <div class="skeleton-banner">
+          <div class="skeleton-avatar"></div>
         </div>
-    
 
-        <div class="leetcode-container" id="leetcode-container">
-          <ul id="skeleton-list" class="skeleton-list">
-            <li><div class="skeleton-text"></div> <div class="skeleton-time"></div></li>
-            <li><div class="skeleton-text"></div> <div class="skeleton-time"></div></li>
-            <li><div class="skeleton-text"></div> <div class="skeleton-time"></div></li>
-            <li><div class="skeleton-text"></div> <div class="skeleton-time"></div></li>
-            <li><div class="skeleton-text"></div> <div class="skeleton-time"></div></li>
-            <li><div class="skeleton-text"></div> <div class="skeleton-time"></div></li>
-            <li><div class="skeleton-text"></div> <div class="skeleton-time"></div></li>
-          </ul>
+        <div class="skeleton-details">
+          <div class="skeleton-text name"></div>
+          <div class="skeleton-text role"></div>
+          <div class="skeleton-text description"></div>
         </div>
       </div>
-    
-    <main class="main_container" id="main_container">
-      
-    </main>
 
-    
-         
+      <div class="leetcode-container" id="leetcode-container">
+        <ul id="skeleton-list" class="skeleton-list">
+          <li>
+            <div class="skeleton-text"></div>
+            <div class="skeleton-time"></div>
+          </li>
+          <li>
+            <div class="skeleton-text"></div>
+            <div class="skeleton-time"></div>
+          </li>
+          <li>
+            <div class="skeleton-text"></div>
+            <div class="skeleton-time"></div>
+          </li>
+          <li>
+            <div class="skeleton-text"></div>
+            <div class="skeleton-time"></div>
+          </li>
+          <li>
+            <div class="skeleton-text"></div>
+            <div class="skeleton-time"></div>
+          </li>
+          <li>
+            <div class="skeleton-text"></div>
+            <div class="skeleton-time"></div>
+          </li>
+          <li>
+            <div class="skeleton-text"></div>
+            <div class="skeleton-time"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-  <script type="module" src="profile.js"></script>
-  <script type="module" src="membersProfile.js"></script>
-</body>
+    <main class="main_container" id="main_container"></main>
+
+    <script type="module" src="profile.js"></script>
+    <script type="module" src="membersProfile.js"></script>
+  </body>
 </html>
