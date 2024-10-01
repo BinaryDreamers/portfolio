@@ -135,9 +135,15 @@ async function displayUserProfile(member) {
         </div>
 
         <div class="infoSocial">
-          <a href=""><span><img src="assets/svg/telegram.svg" alt="telegram"></span></a>
-          <a href=""><span><img src="assets/svg/linkedin-members.svg" alt="linkedIn"></span></a>
-          <a href=""><span><img src="assets/svg/github.svg" alt="github"></span></a>
+          <a target="_blank" href="${
+            member.telegram
+          }"><span><img src="assets/svg/telegram.svg" alt="telegram"></span></a>
+          <a target="_blank" href="${
+            member.linkedin
+          }"><span><img src="assets/svg/linkedin-members.svg" alt="linkedIn"></span></a>
+          <a target="_blank" href="${
+            member.github
+          }"><span><img src="assets/svg/github.svg" alt="github"></span></a>
         </div>    
       </section>
 
