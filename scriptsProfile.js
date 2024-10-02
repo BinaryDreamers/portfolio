@@ -79,7 +79,7 @@ function populateTable(members) {
     });
     // Populate the row with user data
     row.innerHTML = `
-    <td><div class="rank">${index + 1}</div></td>
+    <td><div class="rank"><p>${index + 1}</p></div></td>
     <td>
       <div class="name-wrapper">
         <img src="${member.profileUrl}" alt="${member.name}">

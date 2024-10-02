@@ -71,36 +71,52 @@ table {
   cursor: pointer;
 }
 .profile.first .rank {
-  background-color: gold;
+    
+  background-image: url('assets/svg/Gold.svg');
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .profile.second .rank {
-  background-color: silver;
+  background-image: url('assets/svg/Silver.svg');
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .profile.third .rank {
-  background-color: #cd7f32;
+  background-image: url('assets/svg/Bronz.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .profile.other .rank {
   background-color: transparent;
 }
 
-.rank {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin: 0 auto;
+.rank{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding-top: 5px;
 }
 
-.rankTh {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  box-shadow: none;
+/* .rank p{
+  margin-top: 2px;
+} */
+
+.rankTh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: none
 }
 
 .progresTags {
