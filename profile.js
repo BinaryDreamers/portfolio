@@ -125,12 +125,15 @@ async function displayUserProfile(member) {
         <div class="infoprofile">
           <div class="infoProfilePictureInfo">
             <h3>${member.name}</h3>
-            <p>@${member.leetcode}</p>
+            <a href="https://leetcode.com/u/${
+              member.leetcode
+            }" target="_blank">@${member.leetcode}</a>
             <p>${member.email}</p>
           </div>
 
           <div class="description">
             <p>${member.description}</p>
+            
           </div>
         </div>
 
